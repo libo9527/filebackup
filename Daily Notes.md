@@ -1,13 +1,12 @@
-mac command:
-
-- touch
-- open -e
-- souce
-- echo $JAVA_HOME
-
-
-
 jdk环境变量意义
+
+JAVA_HOME
+
+PATH
+
+CLASS_PATH
+
+
 
 
 
