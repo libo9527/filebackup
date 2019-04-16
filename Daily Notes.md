@@ -58,3 +58,15 @@ Chrome Mac下刷新的快捷键为 command + r
 
 
 Vue 中短横线分隔 (kebab-case，记得用单引号括起来) 来命名
+
+
+
+
+
+
+
+http://bitbucket.sstparts.com/projects/WEB/repos/sst-cloud/browse
+
+http://wiki.sstparts.com:8090
+
+http://jira.sstparts.com:8080
