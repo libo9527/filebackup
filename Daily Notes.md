@@ -1,0 +1,60 @@
+mac command:
+
+- touch
+- open -e
+- souce
+- echo $JAVA_HOME
+
+
+
+jdk环境变量意义
+
+
+
+Mac dmg文件
+
+
+
+Mac 开多个终端窗口
+
+
+
+第二种：按 fn+delete 键，**删除**光标之后的一个**字符**； 第三种：按 option+delete 键，**删除**光标之前的一个单词（英文有效）； 第四种：按 command+delete 键，**删除**光标之前整行内容； 第五种：选中文件后按 command+delete，**删除**掉该文件。
+
+
+
+Mac 下使用git 需要安装Command Line Tools
+
+<https://www.jianshu.com/p/308d7be8b8df>
+
+<https://www.zhihu.com/question/37165801>
+
+
+
+Mac 装node
+
+<https://blog.csdn.net/u010053344/article/details/50545304>
+
+
+
+<https://www.jianshu.com/p/fadb08f64771>
+
+
+
+<https://www.google.com/search?ei=oH-1XNCxNITv-QaX0KHACQ&q=mac+%E6%97%A0%E6%B3%95%E4%BF%9D%E5%AD%98%E4%B8%BAhtml%E6%96%87%E4%BB%B6&oq=mac+%E6%97%A0%E6%B3%95%E4%BF%9D%E5%AD%98%E4%B8%BAhtml%E6%96%87%E4%BB%B6&gs_l=psy-ab.3...13604.22583..22829...3.0..0.143.1858.28j2......0....1..gws-wiz.......0i67j0j0i12j33i160j0i5i30j0i8i30.ZdFuhjvCA_4>
+
+
+
+<https://www.google.com/search?q=span&oq=span&aqs=chrome..69i57j0l5.1034j0j9&sourceid=chrome&ie=UTF-8>
+
+
+
+<https://www.google.com/search?ei=sIK1XJDHDYrmwQPsmL7QBg&q=html+%3Col%3E&oq=html+%3Col%3E&gs_l=psy-ab.3...377208.378652..378963...0.0..0.68.312.6......0....1j2..gws-wiz.......0i71j0i67j0i131j0j0i131i67.hNFoiO5OCWI>
+
+
+
+Chrome Mac下刷新的快捷键为 command + r
+
+
+
+Vue 中短横线分隔 (kebab-case，记得用单引号括起来) 来命名
