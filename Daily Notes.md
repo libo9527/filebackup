@@ -69,3 +69,54 @@ http://bitbucket.sstparts.com/projects/WEB/repos/sst-cloud/browse
 http://wiki.sstparts.com:8090
 
 http://jira.sstparts.com:8080
+
+
+
+
+
+<http://www.w3school.com.cn/tags/tag_label.asp>
+
+
+
+<http://idea.lanyus.com/>
+
+
+
+<https://blog.csdn.net/LinBilin_/article/details/50217541>
+
+
+
+Control + ↑ 查看所有窗口
+
+control + command + space 输入特殊字符
+
+
+
+
+
+```yaml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+```
+
+<https://www.jianshu.com/p/1aadc4c85f51>
+
+
+
+mac 下 idea 的返回快捷键是 option + command + ←
+
+
+
+<https://blog.csdn.net/mccand1234/article/details/60962283>
+
+
+
+<https://blog.csdn.net/xzp_12345/article/details/80268834>
+
+
+
+<https://www.jianshu.com/p/752211238c1b>
+
