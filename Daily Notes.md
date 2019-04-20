@@ -332,3 +332,80 @@ Url 路径参数要包含在{}里
 
 <https://element.eleme.cn/#/zh-CN/component/input>
 
+
+
+<https://segmentfault.com/a/1190000012015667>
+
+
+
+Oracle 主键自增
+
+```java
+@KeySql(sql = "select seq_deal.nextval from dual", order = ORDER.BEFORE)
+```
+
+
+
+```java
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+```
+
+<https://www.jianshu.com/p/09e87180e91e>
+
+需要把无参和全参的注解都加上
+
+
+
+[Mac上如何切换同一应用的多个窗口 - 千橙工坊](https://qiancheng.me/post/uncategorized/tab_swich_for_mac)
+
+
+
+@RequestMapping("/deal")public class DealController {
+
+@PutMapping(value = "/")
+
+请求时找不到 /deal
+
+改成`@PutMapping(value = "/update")`却可以找到 /deal/update
+
+
+
+idea 热部署需重启项目的情况：
+
+- 增加了属性（由于lombok是编译期间添加set/get等的）
+- 修改注解时
+
+
+
+<https://blog.csdn.net/sps900608/column/info/23911>
+
+
+
+<https://juejin.im/post/5c3e9f946fb9a049f06a85ff>
+
+
+
+链接：[https://pan.baidu.com/s/1ETjfrTJeSFNOfss_8Di0Ew ](https://pan.baidu.com/s/1ETjfrTJeSFNOfss_8Di0Ew)
+
+提取码：5x08
+
+
+
+<https://www.jianshu.com/p/76d38bd28fa6>
+
+
+
+
+
+<https://www.jianshu.com/p/d87d7140944e>
+
+
+
+<https://blog.csdn.net/u010297957/article/details/51334951>
+
+
+
+<https://www.zmrenwu.com/courses/vue2x-todo-tutorial/materials/38/>
+
