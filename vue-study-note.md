@@ -83,3 +83,31 @@ mounted(){
 }
 ```
 
+
+
+Vue-resource 是官方提供的一个插件，用来请求数据。
+
+npm install vue-resource --save
+
+save 会将依赖写入package.json
+
+安装好之后需要在main.js文件中加入：
+
+```js
+import VueResource from 'vue-resource';
+Vue.use(VueResource);
+```
+
+
+
+
+
+使用箭头函数，函数里的this指向的就是实例，如果没有使用箭头函数，需要在外面定义一个that来指向实例。
+
+
+
+使用第三方插件axios请求数据时的步骤：
+
+1. 安装
+2. 在那个组件中使用在哪儿引入 
+

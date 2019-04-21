@@ -232,3 +232,4 @@ Component template should contain exactly one root element.
 
 
 
+IINA 设置快进间隔和倍速间隔
