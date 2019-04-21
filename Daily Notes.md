@@ -200,13 +200,13 @@ navicat 中修改 oracle 字段顺序
 
 
 
-mac idea 
+mac idea
 
 control + option + o: 清楚多余import
 
 
 
-Mac 
+Mac
 
 command + delete: 删除整行？
 
@@ -232,4 +232,182 @@ Component template should contain exactly one root element.
 
 
 
+
 IINA 设置快进间隔和倍速间隔
+
+[Mac怎么看wifi密码，苹果电脑怎么查看wifi密码_百度经验](https://jingyan.baidu.com/article/0bc808fc617bc81bd485b93b.html)
+
+
+
+[IDEA中的.iml文件和.idea文件夹- FlyToMyHeart的博客- CSDN博客](https://blog.csdn.net/FlyToMyHeart/article/details/80409098)
+
+
+
+[Intellj Idea中在提交代码时如何忽略iml文件- Josh_Persistence - ITeye ...](http://josh-persistence.iteye.com/blog/2381847)
+
+
+
+[intellij idea文件颜色代表的含义- liang526011569的博客- CSDN博客](https://blog.csdn.net/liang526011569/article/details/77359973)
+
+
+
+[git rm命令 - 删除文件- 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758392816224cafd33c44b4451887cc941e6716805c000)
+
+
+
+<https://www.yiibai.com/git/git_status.html>
+
+[Git 工作区、暂存区和版本库| 菜鸟教程](http://www.runoob.com/git/git-workspace-index-repo.html)
+
+
+
+<https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C>
+
+
+
+
+
+<http://idea.lanyus.com/>也可以用来激活webstorm
+
+
+
+[插槽](https://cn.vuejs.org/v2/guide/components-slots.html)
+
+
+
+Mac切换窗口： control + ←/→
+
+
+
+Mac idea 移动代码：command + shift + ↑/↓
+
+
+
+mybatis模糊查询
+
+```xml
+dealContent like '%' ||  #{content} || '%'
+```
+
+
+
+<http://curllen.uicp.io/2018/10/31/mybatis%E6%8A%BD%E5%8F%96SQL%E7%89%87%E6%AE%B5/>
+
+
+
+[Iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)
+
+
+
+Url 路径参数要包含在{}里
+
+```
+/delete/{id}
+```
+
+
+
+[js 中== 和=== 的区别- 前端- 掘金](https://juejin.im/entry/584918612f301e005716add6)
+
+
+
+[深入理解vue中的slot与slot-scope - 掘金](https://juejin.im/post/5a69ece0f265da3e5a5777ed)
+
+
+
+<https://element.eleme.cn/#/zh-CN/component/form>
+
+
+
+<https://www.jianshu.com/p/33175c3a6ba4>
+
+<http://localhost:63343/sst-cd-vue/src/views/store/developmentInfo/deals/demo.html?_ijt=7ajar2e061v7eefs3l50iblhse>
+
+
+
+<https://www.jianshu.com/p/79f39f2c1382>
+
+
+
+<https://element.eleme.cn/#/zh-CN/component/dialog>
+
+
+
+<https://element.eleme.cn/#/zh-CN/component/input>
+
+
+
+<https://segmentfault.com/a/1190000012015667>
+
+
+
+Oracle 主键自增
+
+```java
+@KeySql(sql = "select seq_deal.nextval from dual", order = ORDER.BEFORE)
+```
+
+
+
+```java
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+```
+
+<https://www.jianshu.com/p/09e87180e91e>
+
+需要把无参和全参的注解都加上
+
+
+
+[Mac上如何切换同一应用的多个窗口 - 千橙工坊](https://qiancheng.me/post/uncategorized/tab_swich_for_mac)
+
+
+
+@RequestMapping("/deal")public class DealController {
+
+@PutMapping(value = "/")
+
+请求时找不到 /deal
+
+改成`@PutMapping(value = "/update")`却可以找到 /deal/update
+
+
+
+idea 热部署需重启项目的情况：
+
+- 增加了属性（由于lombok是编译期间添加set/get等的）
+- 修改注解时
+
+
+
+<https://blog.csdn.net/sps900608/column/info/23911>
+
+
+
+<https://juejin.im/post/5c3e9f946fb9a049f06a85ff>
+
+
+
+链接：[https://pan.baidu.com/s/1ETjfrTJeSFNOfss_8Di0Ew ](https://pan.baidu.com/s/1ETjfrTJeSFNOfss_8Di0Ew)
+
+提取码：5x08
+
+
+
+<https://www.jianshu.com/p/76d38bd28fa6>
+
+
+
+
+
+<https://www.jianshu.com/p/d87d7140944e>
+
+
+
+<https://blog.csdn.net/u010297957/article/details/51334951>
+
+
+
+<https://www.zmrenwu.com/courses/vue2x-todo-tutorial/materials/38/>

@@ -18,6 +18,13 @@ action 和 method 是必填项。
 
 
 
+
+Vue 里的style标签的scoped属性表示局部样式
+
+
+
+组件挂载、更新、销毁等时刻所出发的方法称为生命周期函数，vue官网叫生命周期钩子。
+
 Es6 方法的简写
 
 ```js
@@ -84,7 +91,6 @@ mounted(){
 ```
 
 
-
 Vue-resource 是官方提供的一个插件，用来请求数据。
 
 npm install vue-resource --save
@@ -109,5 +115,4 @@ Vue.use(VueResource);
 使用第三方插件axios请求数据时的步骤：
 
 1. 安装
-2. 在那个组件中使用在哪儿引入 
-
+2. 在那个组件中使用在哪儿引入
