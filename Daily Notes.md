@@ -411,3 +411,115 @@ idea 热部署需重启项目的情况：
 
 
 <https://www.zmrenwu.com/courses/vue2x-todo-tutorial/materials/38/>
+
+
+
+<https://www.zhihu.com/question/31019313>
+
+
+
+[撤销修改- Git 教程](https://xiaosheng.me/ebook/git-tutorial/4-4.html)
+
+(use "git checkout -- <file>..." to discard changes in working directory)
+
+
+
+iMacDev110:sst-cloud libo$ git push
+fatal: The current branch CC-42 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin CC-42
+
+iMacDev110:sst-cloud libo$ 
+
+
+
+[Bitbucket - 维基百科，自由的百科全书](https://zh.wikipedia.org/zh-hans/Bitbucket)
+
+
+
+[Jira入门教程 敏捷开发管理（一）](<https://www.jianshu.com/p/145b5c33f7d0>)
+
+
+
+[Mac 版office 2019安装和破解](<https://blog.csdn.net/qq_31927785/article/details/88829095#commentBox>)
+
+
+
+Mac 看日历：
+
+1. command + space
+2. calender
+3. enter
+
+
+
+
+
+Vue.component(
+  'my-component', {
+    template: '<p>this is my componet.</p>'
+  }
+)
+
+必须在
+
+var vm = new Vue({
+  el: '#app',
+  data: {}
+})
+
+之前，否则报错
+
+
+
+vue组件分为全局组件和局部组件，全局组件使用Vue.component()方法注册，局部组件使用vue实例的compoments属性注册。
+
+```vue
+Vue.component('global-component')
+```
+
+
+
+
+
+<https://blog.csdn.net/XuM222222/article/details/80684909>
+
+
+
+<https://blog.csdn.net/Kikitious_Du/article/details/79603444>
+
+
+
+[Mac如何隐藏程序坞_百度经验](https://jingyan.baidu.com/article/020278112c52421bcd9ce578.html)
+
+
+
+Mac 全屏快捷键：control + command + F
+
+
+
+prop默认是单向绑定：当父组件的属性变化时，将传递给子组件，但是反过来则不会传递。
+
+可以使用`.sync`显式地指定双向绑定，这使得子组件的数据修改会回传给父组件。
+
+```vue
+<child-component v-bind:my-name.sync="name" v-bind:my-age.sync="age"></child-component>
+```
+
+可以使用`.once`显式地指定单次绑定，单次绑定在建立之后不会同步之后的变化，这意味着即使父组件修改了数据，也不会传递给子组件。
+
+```vue
+<my-component v-bind:my-name.once="name" v-bind:my-age.once="age"></my-component>
+```
+
+
+
+注意：2.3.0版本将 v-bind 的 .once 和 .sync 修饰符移除了
+
+[v-bind 的 .once和.sync 修饰符](https://cn.vuejs.org/v2/guide/migration.html#v-bind-的-once和-sync-修饰符-移除)
+
+
+
+[手把手构建一个VUE项目](<https://segmentfault.com/a/1190000014409110#articleHeader10>)
+
