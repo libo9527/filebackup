@@ -523,3 +523,25 @@ prop默认是单向绑定：当父组件的属性变化时，将传递给子组�
 
 [手把手构建一个VUE项目](<https://segmentfault.com/a/1190000014409110#articleHeader10>)
 
+
+
+[Java中VO、 PO、DO、DTO、 BO、 QO、DAO、POJO的概念 ...](https://www.hollischuang.com/archives/553)
+
+
+
+Vue url 不能是 /cd/deal/ 可以是 /cd/deal
+
+然后按RESTFul规范写后端借口
+
+
+
+[处理Git 忘记切分支修改了代码的情况- 致力打造Yii 中国第一社区](https://getyii.com/topic/240)
+
+
+
+[fastjson生成和解析json数据- Fight for Dignitity & Responsibility 的专栏 ...](https://blog.csdn.net/neu_yousei/article/details/23184727)
+
+
+
+[Map和Set - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014345007434430758e3ac6e1b44b1865178e7aff9082e000)
+
