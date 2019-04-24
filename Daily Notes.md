@@ -549,3 +549,61 @@ Vue url 不能是 /cd/deal/ 可以是 /cd/deal
 
 <https://blog.csdn.net/u013948858/article/details/79644245>
 
+
+
+[Oracle dblink详解(转) - sumsen - 博客园](https://www.cnblogs.com/sumsen/archive/2013/03/04/2943471.html)
+
+
+
+[手摸手，带你用vue撸后台系列二(登录权限篇) - 掘金](https://juejin.im/post/591aa14f570c35006961acac)
+
+//所有权限通用路由表 
+//如首页和登录页和一些不用权限的公用页面
+export const constantRouterMap
+
+
+
+//异步挂载的路由
+//动态需要根据权限加载的路由表 
+export const asyncRouterMap 
+
+
+
+[Chrome浏览器如何安装&使用Axure RP扩展程序_百度经验](https://jingyan.baidu.com/article/e2284b2b8afad4e2e6118d91.html)
+
+
+
+搭建分布式任务调度中心
+
+
+
+[分布式定时任务调度系统技术选型--转](https://www.cnblogs.com/davidwang456/p/9057839.html)
+
+
+
+[Flex 布局教程：语法篇- 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
+[Flex 布局教程：实例篇- 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
+
+
+
+Mac 下idea和webstorm竖向连移光标：
+
+shift + option 等价于Windows的alt
+
+
+
+<https://blog.csdn.net/sdta25196/article/details/76718617>
+
+
+
+<https://element.eleme.io/#/zh-CN/component/dropdown#dropdown-menu-item-attributes>
+
+
+
+<http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html>
+
+
+
+<http://www.voidcn.com/article/p-mocvaqvp-bga.html>
+
