@@ -607,3 +607,51 @@ shift + option 等价于Windows的alt
 
 <http://www.voidcn.com/article/p-mocvaqvp-bga.html>
 
+
+
+项目中的 icon 上怎么搞的？
+
+
+
+公司电脑上有曹组长的一次git操作日志
+
+
+
+[Vue + ElementUI 项目中使用第三方图标库：阿里iconfont,封装字体图标 ...](https://www.ganl.io/2017/10/12/Vue-ElementUI-项目中使用第三方图标库：阿里iconfont/)
+
+
+
+[element-ui中使用font-awesome字体图标](https://www.cnblogs.com/wanglu/p/7505394.html)
+
+
+
+[1-12月英文_百度知道](https://zhidao.baidu.com/question/378453047.html)
+
+
+
+[关于如何设置echart图例（legend）的位置- qq_31135027的博客- CSDN ](https://blog.csdn.net/qq_31135027/article/details/79612966)
+
+
+
+https://github.com/CntChen/cntchen.github.io/issues/15
+
+
+
+[vue vue-element-ui组件layout布局系列学习(一) - 然而老干妈早就看穿 ...](https://blog.csdn.net/jack_bob/article/details/79813114)
+
+
+
+<https://element.eleme.cn/#/zh-CN/component/tree>
+
+自定义节点内容:
+
+slot-scope="{ node, data }"
+
+node 是当前节点对象，
+
+data 是当前节点中的数据对象，即{id: 10, label: '三级 1-1-2'}
+
+
+
+[https://yimouren.github.io/2018/09/23/Element%E6%A0%91%E5%AE%9E%E7%8E%B0%E6%87%92%E5%8A%A0%E8%BD%BD/](https://yimouren.github.io/2018/09/23/Element树实现懒加载/)
+
