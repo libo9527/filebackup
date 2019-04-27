@@ -655,3 +655,37 @@ data 是当前节点中的数据对象，即{id: 10, label: '三级 1-1-2'}
 
 [https://yimouren.github.io/2018/09/23/Element%E6%A0%91%E5%AE%9E%E7%8E%B0%E6%87%92%E5%8A%A0%E8%BD%BD/](https://yimouren.github.io/2018/09/23/Element树实现懒加载/)
 
+
+
+await  操作符用于等待一个Promise 对象。它只能在异步函数 async function 中使用。
+
+[async 函数的含义和用法- 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/05/async.html)
+
+
+
+popper-options  [popper.js](https://popper.js.org/documentation.html) 的参数 参考 [popper.js](https://popper.js.org/documentation.html) 文档  
+
+
+
+Mac 最小化：command + m
+
+
+
+<https://blog.csdn.net/SecondJanuary/article/details/8599108>
+
+
+
+[3中Mybatis批量查询方式- 石头视角- CSDN博客](https://blog.csdn.net/liyantianmin/article/details/50516076)
+
+
+
+<http://www.voidcn.com/article/p-wgdebefj-bpy.html>
+
+注意：mapper 接口中参数必须加@Param("Ids")，否则报错说Ids not found
+
+
+
+<https://blog.csdn.net/Mr_JavaScript/article/details/88604270>
+
+<https://github.com/KBeginner/vue-treeSelect-component>
+
