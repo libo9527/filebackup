@@ -689,3 +689,42 @@ Mac 最小化：command + m
 
 <https://github.com/KBeginner/vue-treeSelect-component>
 
+
+
+
+
+<https://www.tangshuang.net/3507.html>
+
+
+
+Mac 下竖向拉长光标的按键在 idea 中是option，在webstorm中是 shift + option
+
+
+
+# [ORACLE 递归查询](https://www.cnblogs.com/bpdwn/archive/2013/06/08/3125987.html)
+
+
+
+[mybatis的xml文件中的SQL语句不能以分号结尾- mlsama的博客- CSDN ...](https://blog.csdn.net/mlsama/article/details/81198476)
+
+
+
+[vue props监听变化的几种方式](<https://www.jianshu.com/p/ff708a773dc0>)
+
+
+
+同步方法和异步方法的响应对象结构不同，请求后端接口一般都要用同步方法。
+
+```
+async getCollectors () {
+  var res = await this.$api.location.getCollectors()
+```
+
+
+
+设置字体
+
+```
+<div align="center" style="font-family: 'San Francisco UI'; color: #909399;">Status</div>
+<div align="center">Collecting</div>
+```
