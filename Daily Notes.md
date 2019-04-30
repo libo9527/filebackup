@@ -728,3 +728,43 @@ async getCollectors () {
 <div align="center" style="font-family: 'San Francisco UI'; color: #909399;">Status</div>
 <div align="center">Collecting</div>
 ```
+
+
+
+<http://www.voidcn.com/article/p-xkdlrlkt-qx.html>
+
+<http://www.w3.org/TR/CSS21/fonts.html#generic-font-families>
+
+
+
+[HTML中Div、span、label标签的区别- cui_angel的专栏- CSDN博客](https://blog.csdn.net/cui_angel/article/details/7676395)
+
+
+
+[vue elementui steps组件在步骤条中添加自定义样式内容- M612a34的 ...](https://blog.csdn.net/M612a34/article/details/84572689)
+
+
+
+[JavaScript 数组遍历方法的对比- 掘金](https://juejin.im/post/5a3a59e7518825698e72376b)
+
+
+
+```
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+```
+
+原因：
+
+- 未定义的字段 或是 错误的别名（select 中，或者join中的，都有可能）
+
+- select 中的字段没用 `,` 分割
+
+
+
+[【MyBatis学习04】大于等于>=及小于等于- 程序老兵的博客- CSDN博客](https://blog.csdn.net/soonfly/article/details/63369700)
+
+
+
+Mac 下查看隐藏文件：
+
+在终端中找到相应文件和目录后，用open命令即可。
