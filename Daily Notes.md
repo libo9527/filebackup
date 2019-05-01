@@ -411,3 +411,40 @@ idea 热部署需重启项目的情况：
 
 
 <https://www.zmrenwu.com/courses/vue2x-todo-tutorial/materials/38/>
+
+
+
+Js 数组的拼接操作
+
+```js
+this.list = this.list.concat(res.data.result);
+```
+
+ 
+
+npm -install element-ui -S
+
+其中 S 代表 —save 
+
+
+
+webpack 是一个模块打包管理工具 
+
+
+
+使用 Element UI 需要在 webpack.config.js 中配置 file-loader
+
+因为 Element UI 的 css 中引用了字体文件（element-icons.ttf），而 webpack 无法解析该文件，所以需要添加如下配置
+
+http://element.eleme.io/1.4/#/zh-CN/component/quickstart
+
+
+	{
+	test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+	loader: 'file-loader'
+	}
+
+
+
+
+Mac 睡眠状态会断网

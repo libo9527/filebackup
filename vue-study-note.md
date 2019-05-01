@@ -116,3 +116,13 @@ Vue.use(VueResource);
 
 1. 安装
 2. 在那个组件中使用在哪儿引入
+
+
+
+Element UI 和 Mint UI 是饿了么开发的 vue 组件库。Element UI 是 PC 端，Mint UI 是移动端。
+
+组件不会用可以看官方的文档，也可以看其GitHub上的examples。
+
+
+
+Vuex 是为了解决不同组件之间的数据共享及持久化
