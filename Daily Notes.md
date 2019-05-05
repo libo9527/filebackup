@@ -768,3 +768,83 @@ async getCollectors () {
 Mac 下查看隐藏文件：
 
 在终端中找到相应文件和目录后，用open命令即可。
+
+
+
+<https://learn.shayhowe.com/>
+
+<https://zh.learnlayout.com/>
+
+
+
+[5种方法来在Mac OS X上截取屏幕截图 - wikiHow](https://zh.wikihow.com/在Mac-OS-X上截取屏幕截图)
+
+
+
+[苹果Mac如何快速显示桌面快捷键及手势_百度经验](https://jingyan.baidu.com/article/6dad50750fbd22a122e36e44.html)
+
+
+
+![](http://ww1.sinaimg.cn/large/005M2pcYgy1g2qawx3w8pj31ig0ms0z2.jpg)
+
+
+
+[关于Java中的Calendar类获取月份- yubo_725 - CSDN博客](https://blog.csdn.net/yubo_725/article/details/41877625)
+
+
+
+[How to convert a Map to List in Java? - Stack Overflow](https://stackoverflow.com/questions/1026723/how-to-convert-a-map-to-list-in-java)
+
+
+
+<http://www.w3school.com.cn/css/css_background.asp>
+
+如果您希望背景色从元素中的文本向外少有延伸，只需增加一些内边距：
+
+```
+p {background-color: gray; padding: 20px;}
+```
+
+
+
+<http://www.w3school.com.cn/css3/css3_border.asp>
+
+CSS3 圆角边框
+在 CSS2 中添加圆角矩形需要技巧。我们必须为每个圆角使用不同的图片。
+
+在 CSS3 中，创建圆角是非常容易的。
+
+在 CSS3 中，border-radius 属性用于创建圆角：
+
+这个矩形有圆角哦！
+
+实例
+向 div 元素添加圆角：
+
+div
+{
+border:2px solid;
+border-radius:25px;
+-moz-border-radius:25px; /* Old Firefox */
+}
+
+其中：border:2px solid; solid是实线的意思
+
+
+
+<http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html>
+
+`align-items`属性定义项目在交叉轴上如何对齐。
+
+
+
+<http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html>
+
+`justify-content`属性定义了项目在主轴上的对齐方式。
+
+- `space-between`：两端对齐，项目之间的间隔都相等。
+
+
+
+<https://blog.csdn.net/leedaning/article/details/44976319>
+
