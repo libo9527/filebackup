@@ -414,6 +414,40 @@ idea 热部署需重启项目的情况：
 
 
 
+Js 数组的拼接操作
+
+```js
+this.list = this.list.concat(res.data.result);
+```
+
+
+
+npm -install element-ui -S
+
+其中 S 代表 —save
+
+
+
+webpack 是一个模块打包管理工具
+
+
+
+使用 Element UI 需要在 webpack.config.js 中配置 file-loader
+
+因为 Element UI 的 css 中引用了字体文件（element-icons.ttf），而 webpack 无法解析该文件，所以需要添加如下配置
+
+http://element.eleme.io/1.4/#/zh-CN/component/quickstart
+
+
+	{
+	test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+	loader: 'file-loader'
+	}
+
+
+
+
+Mac 睡眠状态会断网
 <https://www.zhihu.com/question/31019313>
 
 
@@ -430,7 +464,7 @@ To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin CC-42
 
-iMacDev110:sst-cloud libo$ 
+iMacDev110:sst-cloud libo$
 
 
 
@@ -557,15 +591,15 @@ Vue url 不能是 /cd/deal/ 可以是 /cd/deal
 
 [手摸手，带你用vue撸后台系列二(登录权限篇) - 掘金](https://juejin.im/post/591aa14f570c35006961acac)
 
-//所有权限通用路由表 
+//所有权限通用路由表
 //如首页和登录页和一些不用权限的公用页面
 export const constantRouterMap
 
 
 
 //异步挂载的路由
-//动态需要根据权限加载的路由表 
-export const asyncRouterMap 
+//动态需要根据权限加载的路由表
+export const asyncRouterMap
 
 
 
@@ -847,4 +881,3 @@ border-radius:25px;
 
 
 <https://blog.csdn.net/leedaning/article/details/44976319>
-
