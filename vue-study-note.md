@@ -126,3 +126,93 @@ Element UI 和 Mint UI 是饿了么开发的 vue 组件库。Element UI 是 PC �
 
 
 Vuex 是为了解决不同组件之间的数据共享及持久化
+
+
+
+
+
+V-cloak 能够解决插值表达式闪烁的问题。
+
+V-text 默认没有闪烁问题
+
+v-text 会覆盖元素原本内容，二差值表达式前后可加其他内容
+
+
+
+v-bind 用于绑定属性，v-bind 可以绑定合法的js表达式
+
+
+
+js定时器
+
+setInterval() 开启一个定时器并返回定时器id
+
+clearInterval(id) 停止对应ID的定时器
+
+
+
+时间修饰符
+
+.stop 阻止冒泡（嵌套元素的事件会从内到外冒泡）
+
+.prevent 阻止默认事件
+
+.capture 添加事件监听器时使用事件捕获模式
+
+.self 只有当事件在该元素本身触发时才触发回调
+
+.once 事件只触发一次
+
+
+
+.stop 和 .self 都可以阻止冒泡，区别在于 stop 阻止所有的冒泡，而self 只阻止自己的。
+
+
+
+能与用户进行交互的元素：表单元素
+
+
+
+V-bind 只能实现数据的单向绑定，从 M 到 V到绑定
+
+v-model 只能用于表单元素中
+
+
+
+Js parseInt函数
+
+js eval 函数
+
+
+
+vue中对象的属性可以带引号，也可以不带引号，如果属性中有特殊字符，则需要加引号。
+
+Js 对象就是无序键值对的集合
+
+
+
+vue中遍历数组或者对象时，索引一般都在后面。
+
+```js
+v-for="(item, i) in list"
+
+v-for="(val, key, i) in object"
+```
+
+使用 v-for 迭代数字的时候起始值是1
+
+```js
+v-for="count in 10"
+```
+
+在组件中使用 v-for 时一般都要指定 key 属性，以 v-bind 属性绑定的方式指定key
+
+
+
+Js 数组的push和unshift函数
+
+push 尾部添加，unshift 头部添加
+
+
+
+v-if 每次都会删除或者创建元素，v-show 只是切换元素的 display: none 样式，不回进行 DOM 操作
