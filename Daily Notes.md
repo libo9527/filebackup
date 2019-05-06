@@ -881,3 +881,104 @@ border-radius:25px;
 
 
 <https://blog.csdn.net/leedaning/article/details/44976319>
+
+
+
+[英文名字中间的点怎么打_百度知道](https://zhidao.baidu.com/question/212960560.html)
+
+中文输入下按 `~`
+
+
+
+[创建与合并分支- 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000)
+
+
+
+for-in 语句
+一般会使用for-in来遍历对象的属性的,不过属性需要 enumerable,才能被读取到.
+for-in 循环只遍历可枚举属性。一般常用来遍历对象，包括非整数类型的名称和继承的那些原型链上面的属性也能被遍历。像 Array和 Object使用内置构造函数所创建的对象都会继承自Object.prototype和String.prototype的不可枚举属性就不能遍历了.
+
+
+
+`for-of` 和 `for-in` 的区别
+
+`for-in` 语句以原始插入顺序迭代对象的可枚举属性。`for-in`会把继承链的对象属性都会遍历一遍,所以会更花时间.
+
+`for-of` 语句只遍历可迭代对象的数据。
+
+
+
+[JS - 计算两个数组的交集、差集、并集、补集（多种实现方式）](<http://www.hangge.com/blog/cache/detail_1862.html>)
+
+
+
+[`Array.prototype.map()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+
+
+[mybatis oracle两种方式批量插入数据](<https://blog.csdn.net/phantomes/article/details/70761603>)
+
+[Oracle 批量插入数据 Insert All Into]([http://zhoupq.com/Oracle-%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE-Insert-All-Into/](http://zhoupq.com/Oracle-批量插入数据-Insert-All-Into/))
+
+
+
+[oracle查询叶子节点](https://sujunfei.iteye.com/blog/664003)
+
+```xml
+<select id="selectLeafNodes" resultMap="globalLocationMap">
+    select gl.*
+    from GLOBAL_LOCATION gl
+    where  CONNECT_BY_ISLEAF = 1
+    start with gl.ID = #{locationId}
+    connect by prior  gl.ID = gl.PARENT_ID
+</select>
+```
+
+
+
+Mac idea 方法注射：
+
+option + enter
+
+
+
+[ORA-02287:此处不允许序号(sequence number not allowed here) 的避免以及强制实现](<https://blog.csdn.net/qq525099302/article/details/43053291>)
+
+```xml
+<insert id="batchAdd">
+    INSERT INTO COLLECT_TASK (
+        ID,
+        CITY_ID,
+        POPULATION,
+        COLLECTOR_ID,
+        ALLOCATED_TIME_START,
+        ALLOCATED_TIME_END,
+        STATUS_ID,
+        CREATE_BY,
+        CREATE_DATE,
+        UPDATE_BY,
+        UPDATE_DATE,
+        DEL_FLAG,
+        COLLECTED_QTY
+    )
+    select SEQ_COLLECT_TASK.nextval,t.c1,t.c2,t.c3,t.c4,t.c5,t.c6,t.c7,t.c8,t.c9,t.c10,t.c11,t.c12 from (
+        <foreach collection="list" item="item" index="index" separator="union all" >
+            select
+            #{item.cityId} c1,
+            #{item.population} c2,
+            #{item.collectorId} c3,
+            #{item.allocatedTimeStart} c4,
+            #{item.allocatedTimeEnd} c5,
+            #{item.statusId} c6,
+            #{item.createBy} c7,
+            #{item.createDate} c8,
+            #{item.updateBy} c9,
+            #{item.updateDate} c10,
+            #{item.delFlag} c11,
+            #{item.collectedQty} c12
+            from dual
+        </foreach>
+    ) t
+</insert>
+```
+
