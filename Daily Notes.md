@@ -982,3 +982,75 @@ option + enter
 </insert>
 ```
 
+
+
+[oracle排序后获取第一条数据](<https://blog.csdn.net/u010227447/article/details/26134087>)
+
+[Oracle的递归查询详解](http://www.ibloger.net/article/256.html)
+
+
+
+字符串数组转Long数组
+
+```java
+public static void main(String[] args) {
+    String path = ",1,2,3,4,5,";
+    List<Long> list = Arrays.stream(path.substring(1, path.length() - 1).split(",")).map(n -> Long.parseLong(n)).collect(Collectors.toList());
+    System.out.println(list);
+}
+```
+
+
+
+oracle 是否为叶子节点
+
+```xml
+<select id="getLocationNodeListByParentId" resultType="com.sst.cloud.provider.cd.location.vo.LocationTreeNodeVo">
+      SELECT CONNECT_BY_ISLEAF AS isLeaf,
+      ID,
+      PARENT_ID as parentId,
+      ENGLISH_NAME as englishName,
+      STATUS
+      FROM GLOBAL_LOCATION
+WHERE PARENT_ID = #{PARENTID}
+      START WITH PARENT_ID = #{PARENTID}
+      CONNECT BY PARENT_ID = PRIOR ID
+ORDER BY ID
+  </select>
+```
+
+```java
+public class LocationTreeNodeVo {
+
+    private Long id;
+
+    private Long parentId;
+
+    private Boolean isLeaf;
+
+    private String englishName;
+
+    private Long collectedQTY;
+
+    private Long status;
+}
+```
+
+直接用Boolean接收
+
+
+
+Css 粗体
+
+```css
+.fontclass{
+  font-weight: bold;
+}
+```
+
+
+
+[vue非父子组件之间的传值--bus（总线/观察者模式）](<https://my.oschina.net/u/3229305/blog/1820279>)
+
+[vue非父子组件怎么进行通信](https://segmentfault.com/a/1190000008042320)
+
