@@ -1054,3 +1054,82 @@ Css 粗体
 
 [vue非父子组件怎么进行通信](https://segmentfault.com/a/1190000008042320)
 
+
+
+Vue 组件传值时的时机
+
+传默认值，即首次传的值需要在watch里监听，然后做相应处理。否则获取不到对应值
+
+
+
+span默认不像[div](http://www.thinkcss.com/)是块元素，对span使用文字居中[text-align:center](https://www.thinkcss.com/css/1131.shtml)样式，文字内容是无法在span居中的。
+
+[span内文字居中css布局方法_让span内容居中](<https://www.thinkcss.com/jiqiao/1425.shtml>)
+
+[如何让span中的文字垂直居中- Dzq_Boyka的博客- CSDN博客](https://blog.csdn.net/dzq_boyka/article/details/54585435)
+
+[终于搞清楚DIV和SPAN怎么样垂直居中对齐了](<http://zhlwish.blog.sohu.com/19140744.html>)
+
+
+
+```html
+<div style="height:400px; border:1px #e4e4e4 solid">
+  <span style="display:block; text-align: center;line-height: 400px">No Data</span>
+</div>
+```
+
+`border:1px #e4e4e4 solid`中的solid代表实线
+
+
+
+[漂亮的水平分隔線➖，利用 CSS](<http://forever0411.blogspot.com/2017/05/hr.html>)
+
+
+
+[/CSS/font](<https://developer.mozilla.org/zh-CN/docs/Web/CSS/font>)
+
+
+
+[CSS垂直居中的12种实现方式](<https://juejin.im/post/5a5ca65a6fb9a01ca3254537#heading-6>)
+
+使用flex布局
+HTML
+```html
+<div id="box">test vertical align</div>
+```
+
+CSS
+```css
+#box {
+    width: 300px;
+    height: 300px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+}
+```
+
+
+
+
+
+webstorm 展开与收起：
+
+全部展开/收起：shift + command `+`
+
+局部展开/收起：option + command `+`
+
+
+
+
+
+<https://vue-loader.vuejs.org/en/features/scoped-css.html> 
+
+
+
+[自定义elementui中的图标](<https://www.jianshu.com/p/32251dcf6fca>)
+
+
+
+<https://fontawesome.com/v4.7.0/>
+
