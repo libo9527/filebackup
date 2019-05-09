@@ -1133,3 +1133,45 @@ webstorm 展开与收起：
 
 <https://fontawesome.com/v4.7.0/>
 
+
+
+CSS——去重叠边框
+
+<https://blog.csdn.net/wzj0808/article/details/51690118>
+
+<https://blog.csdn.net/u013344993/article/details/80081151>
+
+
+
+[重新认识vue之事件阻止冒泡](https://segmentfault.com/a/1190000015852875)
+
+
+
+[例外的 `!important` 规则](<https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity>)
+
+当在一个样式声明中使用一个`!important` 规则时，此声明将覆盖任何其他声明。虽然技术上`!important`与优先级无关，但它与它直接相关。
+
+使用 `!important` 是一个坏习惯，应该尽量避免，因为这破坏了样式表中的固有的级联规则 使得调试找bug变得更加困难了。当两条相互冲突的带有 `!important` 规则的声明被应用到相同的元素上时，拥有更大优先级的声明将会被采用。
+
+
+
+[el-select 默认样式问题](<https://github.com/ElemeFE/element/issues/2240>)
+
+
+
+[Oracle查询忽略大小写的实现方法](<http://database.51cto.com/art/201010/231561.htm>)
+
+
+
+[Window setTimeout() 方法](<http://www.runoob.com/jsref/met-win-settimeout.html>)
+
+
+
+[在elementUI中使用 el-autocomplete 实现远程搜索的下拉框](<https://blog.csdn.net/qq_37746973/article/details/78402812>)
+
+autocomplete只识别value字段并在下拉列中显示
+
+| trigger-on-focus | 是否在输入框 focus 时显示建议列表 | boolean | —    | true |
+| ---------------- | --------------------------------- | ------- | ---- | ---- |
+|                  |                                   |         |      |      |
+
