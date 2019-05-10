@@ -1175,3 +1175,70 @@ autocomplete只识别value字段并在下拉列中显示
 | ---------------- | --------------------------------- | ------- | ---- | ---- |
 |                  |                                   |         |      |      |
 
+
+
+https://github.com/apache/incubator-echarts/issues/4829#issuecomment-328254135
+
+
+
+[Js计算时间差，天数，小时数，余数](https://qiaolevip.iteye.com/blog/1329292)
+
+
+
+
+
+Mac - navicat 执行选中：command + r
+
+
+
+[Java的几个基本类型之间的相互转换| Matt's Blog](https://matt33.com/2015/10/27/TheTransformOfJava/)
+
+```java
+location.setStatus((long) GLOBAL_LOCATION_STATUS_ASSIGNED);
+```
+
+
+
+[es6数组去重（连重复的对象也可以去掉）](<https://juejin.im/post/5b17a2c251882513e9059231>)
+
+
+
+js数组倒序reverse
+
+
+
+
+
+js增加class或者删除class
+
+html5增加了classList
+
+classList 属性返回元素的类名，作为 DOMTokenList 对象。
+
+该属性用于在元素中添加，移除及切换 CSS 类。
+
+classList 属性是只读的，但你可以使用 add() 和 remove() 方法修改它。
+
+增加：document.getElementById("myDIV").classList.add("mystyle", "anotherClass", "thirdClass");
+
+去除：document.getElementById("myDIV").classList.remove("mystyle"); 
+
+
+
+[css3之animation制作闪烁文字效果](<https://blog.csdn.net/alex8046/article/details/52754737>)
+
+[**CSS animations**](<https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Animations/Using_CSS_animations>)
+
+[css3 文字闪烁效果_html实现文字闪烁代码的多种形式](<http://www.fly63.com/article/detial/616>)
+
+
+
+
+
+[[elementUI tree 懒加载 更新节点](https://segmentfault.com/a/1190000017512508)]
+
+[elementui tree如何重新渲染指定节点及其子节点(懒加载方式)](https://segmentfault.com/q/1010000015680930)
+
+[ElementUI如何展开指定Tree树节点](<https://blog.csdn.net/gaojie_csdn/article/details/80738488>)这种试了没用
+
+el-tree setCurrentKey能干嘛？
