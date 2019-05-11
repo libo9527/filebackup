@@ -1242,3 +1242,13 @@ classList 属性是只读的，但你可以使用 add() 和 remove() 方法修�
 [ElementUI如何展开指定Tree树节点](<https://blog.csdn.net/gaojie_csdn/article/details/80738488>)这种试了没用
 
 el-tree setCurrentKey能干嘛？
+
+
+
+[定时器](<https://javascript.ruanyifeng.com/advanced/timer.html>)
+
+JavaScript 提供定时执行代码的功能，叫做定时器（timer），主要由setTimeout()和setInterval()这两个函数来完成。它们向任务队列添加定时任务。
+
+setTimeout和setInterval函数，都返回一个整数值，表示计数器编号。将该整数传入clearTimeout和clearInterval函数，就可以取消对应的定时器。
+
+debounce 函数（防抖动）
