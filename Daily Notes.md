@@ -1252,3 +1252,132 @@ JavaScript 提供定时执行代码的功能，叫做定时器（timer），主�
 setTimeout和setInterval函数，都返回一个整数值，表示计数器编号。将该整数传入clearTimeout和clearInterval函数，就可以取消对应的定时器。
 
 debounce 函数（防抖动）
+
+
+
+[Number.MAX_SAFE_INTEGER](<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER>)
+
+
+
+[JavaScript 中 Map 与 JSON 转换](<https://www.jianshu.com/p/af4e04cb72bf>)
+
+```js
+var map = new Map()
+map.set(0, [2])
+Cookies.set('location-sort', JSON.stringify(map))
+var locationSort = new Map(JSON.parse(Cookies.get('location-sort')))
+```
+
+
+
+[Access to ES6 array element index inside for-of loop](https://stackoverflow.com/questions/34348937/access-to-es6-array-element-index-inside-for-of-loop)
+
+
+
+[如何在 Mac 上强制退出应用](<https://support.apple.com/zh-cn/HT201276>)
+
+
+
+Array.prototype.unshift()
+
+**unshift()** 方法将一个或多个元素添加到数组的开头，并返回该数组的新长度。
+
+```
+var a = [{id: 1, name: 'a'}, {id: 2, name: 'b'}]
+var b = [{id: 3, name: 'c'}, {id: 4, name: 'd'}]
+a.unshift(b)
+console.log(a)
+// (3) [Array(2), {…}, {…}]
+// 0: Array(2)
+// 0: {id: 3, name: "c"}
+// 1: {id: 4, name: "d"}
+// length: 2
+// __proto__: Array(0)
+// 1: {id: 1, name: "a"}
+// 2: {id: 2, name: "b"}
+// a.unshift({id: 3, name: 'c'}, {id: 4, name: 'd'})
+// console.log(a)
+// (4) [{…}, {…}, {…}, {…}]
+// 0: {id: 3, name: "c"}
+// 1: {id: 4, name: "d"}
+// 2: {id: 1, name: "a"}
+// 3: {id: 2, name: "b"}
+```
+
+
+
+
+
+el-tree调整节点顺序的方法：
+
+通过调整父节点childNodes中子节点的相对位置来改变子节点的顺序。
+
+需要注意的是不能通过remove结合insertBefore的方式来调整顺序，因为romove方法删除节点后就无法再通过getNode方法获取到该节点了
+
+```js
+topCheckedNodes () {
+  var checkedNodesData = this.$refs.locationTree.getCheckedNodes()
+  for (let nodeData of checkedNodesData) {
+    this.recursionTop(this.$refs.locationTree.getNode(nodeData.id))
+    this.$refs.locationTree.setChecked(nodeData, false, true)
+  }
+},
+recursionTop (node) {
+  while (node.parent != null) {
+    var parent = node.parent
+    if (node !== parent.childNodes[0]) {
+      parent.childNodes.splice(parent.childNodes.indexOf(node), 1)
+      parent.childNodes.unshift(node)
+      // this.swap(parent.childNodes, 0, parent.childNodes.indexOf(node))
+      // this.$refs.locationTree.remove(node)
+      // parent.childNodes.unshift(node)
+    }
+    node = parent
+  }
+}
+```
+
+
+
+el-tree通过如下方式可动态收起子节点：
+
+```js
+this.$refs.locationTree.getNode(7).expanded = false
+```
+
+
+
+Array.prototype.reverse()
+
+`reverse()` 方法将数组中元素的位置颠倒,并返回该数组。该方法会改变原数组。
+
+
+
+删除的对象数组中的某一项：
+
+```js
+array.splice(array.indexOf(item), 1)
+```
+
+indexOf()方法返回在数组中可以找到一个给定元素的第一个索引，如果不存在，则返回-1。
+
+
+
+[js实现交换数组元素位置的方法总汇](<http://www.fly63.com/article/detial/1089>)
+
+可使用splice方法来交换数组的位置，如下：
+
+```
+array.splice(index2,1,...array.splice(index1, 1 , array[index2]));
+```
+
+array.splice(index1, 1 , array[index2])会将index1位置上的元素替换为index2位置的元素，同时返回[array[index1]]（注意此时返回的是数组，所以在代码中加入了扩展运算符...将数组转为参数序列）。再利用同样的方式将index2位置上的元素替换为被删除的原数组的array[index1]的值。完成交换。
+
+
+
+[Why does javascript map function return undefined?](https://stackoverflow.com/questions/16037049/why-does-javascript-map-function-return-undefined)
+
+
+
+[Oracle创建序列，删除序列，得到序列的例子](https://www.cnblogs.com/rootq/articles/1089392.html)
+
