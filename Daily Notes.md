@@ -1381,3 +1381,21 @@ array.splice(index1, 1 , array[index2])会将index1位置上的元素替换为in
 
 [Oracle创建序列，删除序列，得到序列的例子](https://www.cnblogs.com/rootq/articles/1089392.html)
 
+
+
+[vue中自定义按钮组件为什么要加.native](https://segmentfault.com/q/1010000011186651)
+
+ `.native` 修饰符就是用来注册元素的原生事件而不是组件自定义事件的
+
+
+
+[JS阻止冒泡和取消默认事件(默认行为)](http://caibaojian.com/javascript-stoppropagation-preventdefault.html)
+
+
+
+[git拉取远程分支并创建本地分支](<https://blog.csdn.net/tterminator/article/details/52225720>)
+
+
+
+[iView - A high quality UI Toolkit based on Vue.js](https://www.iviewui.com/)
+
