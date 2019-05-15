@@ -1399,3 +1399,70 @@ array.splice(index1, 1 , array[index2])会将index1位置上的元素替换为in
 
 [iView - A high quality UI Toolkit based on Vue.js](https://www.iviewui.com/)
 
+
+
+[Atom 列编辑](<https://atom.io/packages/Sublime-Style-Column-Selection>)
+
+[如何选择编辑器中的列（Atom，Notepad ++，Kate，VIM，Sublime，Textpad等）和IDE（NetBeans，IntelliJ IDEA，Eclipse，Visual Studio等）](<https://cloud.tencent.com/developer/ask/27877>)
+
+
+
+[oracle通过sql获取表结构](<https://blog.csdn.net/u010663021/article/details/77775721>)
+
+
+
+[Oracle CHAR，VARCHAR，VARCHAR2,nvarchar类型的区别与使用 ...](https://blog.csdn.net/javaloveiphone/article/details/8155827)
+
+varchar/varchar2 
+
+varchar是长度不固定的，比如说，你定义了varchar(20),当你插入abc，则在数据库中只占3个字节。 
+
+varchar同样区分中英文，这点同char。 
+
+varchar2基本上等同于varchar，它是oracle自己定义的一个非工业标准varchar，不同在于，varchar2用null代替varchar的空字符串 
+
+varchar/varchar2适用于长度不固定的，一般不含中文的情况 
+
+
+
+[Webstorm 文档注释模板及函数代码注释](<https://blog.csdn.net/qq_39108466/article/details/79712547>)
+
+
+
+[inner join with group by expression in oracle sql `[duplicate]`](https://stackoverflow.com/questions/15870331/inner-join-with-group-by-expression-in-oracle-sql)
+
+```sql
+SELECT
+	SG.ID,
+	SG.GROUP_NAME,
+	SG.DESCRIPTION,
+	SG.GROUP_TYPE,
+	SG.STATUS,
+	COUNT( SGR.STORE_GROUP_ID ) AS MEMBERQTY 
+FROM
+	STORE_GROUP SG
+	LEFT JOIN STORE_GROUP_REL SGR ON SG.ID = SGR.STORE_GROUP_ID 
+GROUP BY
+	（ SG.ID,
+	SG.GROUP_NAME,
+	SG.DESCRIPTION,
+	SG.GROUP_TYPE,
+	SG.STATUS,
+	SGR.STORE_GROUP_ID）
+```
+
+
+
+chrome 预览 markdown 文件：
+
+使用 Markdown Viewer 插件
+
+```
+✚ Local Files
+
+1. Navigate to `chrome://extensions`
+2. Locate Markdown Viewer and click on the `DETAILS` button
+3. Make sure that the `Allow access to file URLs` switch is turned on
+```
+
+需要在设置里允许该插件访问文件网址
