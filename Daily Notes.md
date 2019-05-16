@@ -881,3 +881,588 @@ border-radius:25px;
 
 
 <https://blog.csdn.net/leedaning/article/details/44976319>
+
+
+
+[英文名字中间的点怎么打_百度知道](https://zhidao.baidu.com/question/212960560.html)
+
+中文输入下按 `~`
+
+
+
+[创建与合并分支- 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000)
+
+
+
+for-in 语句
+一般会使用for-in来遍历对象的属性的,不过属性需要 enumerable,才能被读取到.
+for-in 循环只遍历可枚举属性。一般常用来遍历对象，包括非整数类型的名称和继承的那些原型链上面的属性也能被遍历。像 Array和 Object使用内置构造函数所创建的对象都会继承自Object.prototype和String.prototype的不可枚举属性就不能遍历了.
+
+
+
+`for-of` 和 `for-in` 的区别
+
+`for-in` 语句以原始插入顺序迭代对象的可枚举属性。`for-in`会把继承链的对象属性都会遍历一遍,所以会更花时间.
+
+`for-of` 语句只遍历可迭代对象的数据。
+
+
+
+[JS - 计算两个数组的交集、差集、并集、补集（多种实现方式）](<http://www.hangge.com/blog/cache/detail_1862.html>)
+
+
+
+[`Array.prototype.map()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+
+
+[mybatis oracle两种方式批量插入数据](<https://blog.csdn.net/phantomes/article/details/70761603>)
+
+[Oracle 批量插入数据 Insert All Into]([http://zhoupq.com/Oracle-%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE-Insert-All-Into/](http://zhoupq.com/Oracle-批量插入数据-Insert-All-Into/))
+
+
+
+[oracle查询叶子节点](https://sujunfei.iteye.com/blog/664003)
+
+```xml
+<select id="selectLeafNodes" resultMap="globalLocationMap">
+    select gl.*
+    from GLOBAL_LOCATION gl
+    where  CONNECT_BY_ISLEAF = 1
+    start with gl.ID = #{locationId}
+    connect by prior  gl.ID = gl.PARENT_ID
+</select>
+```
+
+
+
+Mac idea 方法注射：
+
+option + enter
+
+
+
+[ORA-02287:此处不允许序号(sequence number not allowed here) 的避免以及强制实现](<https://blog.csdn.net/qq525099302/article/details/43053291>)
+
+```xml
+<insert id="batchAdd">
+    INSERT INTO COLLECT_TASK (
+        ID,
+        CITY_ID,
+        POPULATION,
+        COLLECTOR_ID,
+        ALLOCATED_TIME_START,
+        ALLOCATED_TIME_END,
+        STATUS_ID,
+        CREATE_BY,
+        CREATE_DATE,
+        UPDATE_BY,
+        UPDATE_DATE,
+        DEL_FLAG,
+        COLLECTED_QTY
+    )
+    select SEQ_COLLECT_TASK.nextval,t.c1,t.c2,t.c3,t.c4,t.c5,t.c6,t.c7,t.c8,t.c9,t.c10,t.c11,t.c12 from (
+        <foreach collection="list" item="item" index="index" separator="union all" >
+            select
+            #{item.cityId} c1,
+            #{item.population} c2,
+            #{item.collectorId} c3,
+            #{item.allocatedTimeStart} c4,
+            #{item.allocatedTimeEnd} c5,
+            #{item.statusId} c6,
+            #{item.createBy} c7,
+            #{item.createDate} c8,
+            #{item.updateBy} c9,
+            #{item.updateDate} c10,
+            #{item.delFlag} c11,
+            #{item.collectedQty} c12
+            from dual
+        </foreach>
+    ) t
+</insert>
+```
+
+
+
+[oracle排序后获取第一条数据](<https://blog.csdn.net/u010227447/article/details/26134087>)
+
+[Oracle的递归查询详解](http://www.ibloger.net/article/256.html)
+
+
+
+字符串数组转Long数组
+
+```java
+public static void main(String[] args) {
+    String path = ",1,2,3,4,5,";
+    List<Long> list = Arrays.stream(path.substring(1, path.length() - 1).split(",")).map(n -> Long.parseLong(n)).collect(Collectors.toList());
+    System.out.println(list);
+}
+```
+
+
+
+oracle 是否为叶子节点
+
+```xml
+<select id="getLocationNodeListByParentId" resultType="com.sst.cloud.provider.cd.location.vo.LocationTreeNodeVo">
+      SELECT CONNECT_BY_ISLEAF AS isLeaf,
+      ID,
+      PARENT_ID as parentId,
+      ENGLISH_NAME as englishName,
+      STATUS
+      FROM GLOBAL_LOCATION
+WHERE PARENT_ID = #{PARENTID}
+      START WITH PARENT_ID = #{PARENTID}
+      CONNECT BY PARENT_ID = PRIOR ID
+ORDER BY ID
+  </select>
+```
+
+```java
+public class LocationTreeNodeVo {
+
+    private Long id;
+
+    private Long parentId;
+
+    private Boolean isLeaf;
+
+    private String englishName;
+
+    private Long collectedQTY;
+
+    private Long status;
+}
+```
+
+直接用Boolean接收
+
+
+
+Css 粗体
+
+```css
+.fontclass{
+  font-weight: bold;
+}
+```
+
+
+
+[vue非父子组件之间的传值--bus（总线/观察者模式）](<https://my.oschina.net/u/3229305/blog/1820279>)
+
+[vue非父子组件怎么进行通信](https://segmentfault.com/a/1190000008042320)
+
+
+
+Vue 组件传值时的时机
+
+传默认值，即首次传的值需要在watch里监听，然后做相应处理。否则获取不到对应值
+
+
+
+span默认不像[div](http://www.thinkcss.com/)是块元素，对span使用文字居中[text-align:center](https://www.thinkcss.com/css/1131.shtml)样式，文字内容是无法在span居中的。
+
+[span内文字居中css布局方法_让span内容居中](<https://www.thinkcss.com/jiqiao/1425.shtml>)
+
+[如何让span中的文字垂直居中- Dzq_Boyka的博客- CSDN博客](https://blog.csdn.net/dzq_boyka/article/details/54585435)
+
+[终于搞清楚DIV和SPAN怎么样垂直居中对齐了](<http://zhlwish.blog.sohu.com/19140744.html>)
+
+
+
+```html
+<div style="height:400px; border:1px #e4e4e4 solid">
+  <span style="display:block; text-align: center;line-height: 400px">No Data</span>
+</div>
+```
+
+`border:1px #e4e4e4 solid`中的solid代表实线
+
+
+
+[漂亮的水平分隔線➖，利用 CSS](<http://forever0411.blogspot.com/2017/05/hr.html>)
+
+
+
+[/CSS/font](<https://developer.mozilla.org/zh-CN/docs/Web/CSS/font>)
+
+
+
+[CSS垂直居中的12种实现方式](<https://juejin.im/post/5a5ca65a6fb9a01ca3254537#heading-6>)
+
+使用flex布局
+HTML
+```html
+<div id="box">test vertical align</div>
+```
+
+CSS
+```css
+#box {
+    width: 300px;
+    height: 300px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+}
+```
+
+
+
+
+
+webstorm 展开与收起：
+
+全部展开/收起：shift + command `+`
+
+局部展开/收起：option + command `+`
+
+
+
+
+
+<https://vue-loader.vuejs.org/en/features/scoped-css.html> 
+
+
+
+[自定义elementui中的图标](<https://www.jianshu.com/p/32251dcf6fca>)
+
+
+
+<https://fontawesome.com/v4.7.0/>
+
+
+
+CSS——去重叠边框
+
+<https://blog.csdn.net/wzj0808/article/details/51690118>
+
+<https://blog.csdn.net/u013344993/article/details/80081151>
+
+
+
+[重新认识vue之事件阻止冒泡](https://segmentfault.com/a/1190000015852875)
+
+
+
+[例外的 `!important` 规则](<https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity>)
+
+当在一个样式声明中使用一个`!important` 规则时，此声明将覆盖任何其他声明。虽然技术上`!important`与优先级无关，但它与它直接相关。
+
+使用 `!important` 是一个坏习惯，应该尽量避免，因为这破坏了样式表中的固有的级联规则 使得调试找bug变得更加困难了。当两条相互冲突的带有 `!important` 规则的声明被应用到相同的元素上时，拥有更大优先级的声明将会被采用。
+
+
+
+[el-select 默认样式问题](<https://github.com/ElemeFE/element/issues/2240>)
+
+
+
+[Oracle查询忽略大小写的实现方法](<http://database.51cto.com/art/201010/231561.htm>)
+
+
+
+[Window setTimeout() 方法](<http://www.runoob.com/jsref/met-win-settimeout.html>)
+
+
+
+[在elementUI中使用 el-autocomplete 实现远程搜索的下拉框](<https://blog.csdn.net/qq_37746973/article/details/78402812>)
+
+autocomplete只识别value字段并在下拉列中显示
+
+| trigger-on-focus | 是否在输入框 focus 时显示建议列表 | boolean | —    | true |
+| ---------------- | --------------------------------- | ------- | ---- | ---- |
+|                  |                                   |         |      |      |
+
+
+
+https://github.com/apache/incubator-echarts/issues/4829#issuecomment-328254135
+
+
+
+[Js计算时间差，天数，小时数，余数](https://qiaolevip.iteye.com/blog/1329292)
+
+
+
+
+
+Mac - navicat 执行选中：command + r
+
+
+
+[Java的几个基本类型之间的相互转换| Matt's Blog](https://matt33.com/2015/10/27/TheTransformOfJava/)
+
+```java
+location.setStatus((long) GLOBAL_LOCATION_STATUS_ASSIGNED);
+```
+
+
+
+[es6数组去重（连重复的对象也可以去掉）](<https://juejin.im/post/5b17a2c251882513e9059231>)
+
+
+
+js数组倒序reverse
+
+
+
+
+
+js增加class或者删除class
+
+html5增加了classList
+
+classList 属性返回元素的类名，作为 DOMTokenList 对象。
+
+该属性用于在元素中添加，移除及切换 CSS 类。
+
+classList 属性是只读的，但你可以使用 add() 和 remove() 方法修改它。
+
+增加：document.getElementById("myDIV").classList.add("mystyle", "anotherClass", "thirdClass");
+
+去除：document.getElementById("myDIV").classList.remove("mystyle"); 
+
+
+
+[css3之animation制作闪烁文字效果](<https://blog.csdn.net/alex8046/article/details/52754737>)
+
+[**CSS animations**](<https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Animations/Using_CSS_animations>)
+
+[css3 文字闪烁效果_html实现文字闪烁代码的多种形式](<http://www.fly63.com/article/detial/616>)
+
+
+
+
+
+[[elementUI tree 懒加载 更新节点](https://segmentfault.com/a/1190000017512508)]
+
+[elementui tree如何重新渲染指定节点及其子节点(懒加载方式)](https://segmentfault.com/q/1010000015680930)
+
+[ElementUI如何展开指定Tree树节点](<https://blog.csdn.net/gaojie_csdn/article/details/80738488>)这种试了没用
+
+el-tree setCurrentKey能干嘛？
+
+
+
+[定时器](<https://javascript.ruanyifeng.com/advanced/timer.html>)
+
+JavaScript 提供定时执行代码的功能，叫做定时器（timer），主要由setTimeout()和setInterval()这两个函数来完成。它们向任务队列添加定时任务。
+
+setTimeout和setInterval函数，都返回一个整数值，表示计数器编号。将该整数传入clearTimeout和clearInterval函数，就可以取消对应的定时器。
+
+debounce 函数（防抖动）
+
+
+
+[Number.MAX_SAFE_INTEGER](<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER>)
+
+
+
+[JavaScript 中 Map 与 JSON 转换](<https://www.jianshu.com/p/af4e04cb72bf>)
+
+```js
+var map = new Map()
+map.set(0, [2])
+Cookies.set('location-sort', JSON.stringify(map))
+var locationSort = new Map(JSON.parse(Cookies.get('location-sort')))
+```
+
+
+
+[Access to ES6 array element index inside for-of loop](https://stackoverflow.com/questions/34348937/access-to-es6-array-element-index-inside-for-of-loop)
+
+
+
+[如何在 Mac 上强制退出应用](<https://support.apple.com/zh-cn/HT201276>)
+
+
+
+Array.prototype.unshift()
+
+**unshift()** 方法将一个或多个元素添加到数组的开头，并返回该数组的新长度。
+
+```
+var a = [{id: 1, name: 'a'}, {id: 2, name: 'b'}]
+var b = [{id: 3, name: 'c'}, {id: 4, name: 'd'}]
+a.unshift(b)
+console.log(a)
+// (3) [Array(2), {…}, {…}]
+// 0: Array(2)
+// 0: {id: 3, name: "c"}
+// 1: {id: 4, name: "d"}
+// length: 2
+// __proto__: Array(0)
+// 1: {id: 1, name: "a"}
+// 2: {id: 2, name: "b"}
+// a.unshift({id: 3, name: 'c'}, {id: 4, name: 'd'})
+// console.log(a)
+// (4) [{…}, {…}, {…}, {…}]
+// 0: {id: 3, name: "c"}
+// 1: {id: 4, name: "d"}
+// 2: {id: 1, name: "a"}
+// 3: {id: 2, name: "b"}
+```
+
+
+
+
+
+el-tree调整节点顺序的方法：
+
+通过调整父节点childNodes中子节点的相对位置来改变子节点的顺序。
+
+需要注意的是不能通过remove结合insertBefore的方式来调整顺序，因为romove方法删除节点后就无法再通过getNode方法获取到该节点了
+
+```js
+topCheckedNodes () {
+  var checkedNodesData = this.$refs.locationTree.getCheckedNodes()
+  for (let nodeData of checkedNodesData) {
+    this.recursionTop(this.$refs.locationTree.getNode(nodeData.id))
+    this.$refs.locationTree.setChecked(nodeData, false, true)
+  }
+},
+recursionTop (node) {
+  while (node.parent != null) {
+    var parent = node.parent
+    if (node !== parent.childNodes[0]) {
+      parent.childNodes.splice(parent.childNodes.indexOf(node), 1)
+      parent.childNodes.unshift(node)
+      // this.swap(parent.childNodes, 0, parent.childNodes.indexOf(node))
+      // this.$refs.locationTree.remove(node)
+      // parent.childNodes.unshift(node)
+    }
+    node = parent
+  }
+}
+```
+
+
+
+el-tree通过如下方式可动态收起子节点：
+
+```js
+this.$refs.locationTree.getNode(7).expanded = false
+```
+
+
+
+Array.prototype.reverse()
+
+`reverse()` 方法将数组中元素的位置颠倒,并返回该数组。该方法会改变原数组。
+
+
+
+删除的对象数组中的某一项：
+
+```js
+array.splice(array.indexOf(item), 1)
+```
+
+indexOf()方法返回在数组中可以找到一个给定元素的第一个索引，如果不存在，则返回-1。
+
+
+
+[js实现交换数组元素位置的方法总汇](<http://www.fly63.com/article/detial/1089>)
+
+可使用splice方法来交换数组的位置，如下：
+
+```
+array.splice(index2,1,...array.splice(index1, 1 , array[index2]));
+```
+
+array.splice(index1, 1 , array[index2])会将index1位置上的元素替换为index2位置的元素，同时返回[array[index1]]（注意此时返回的是数组，所以在代码中加入了扩展运算符...将数组转为参数序列）。再利用同样的方式将index2位置上的元素替换为被删除的原数组的array[index1]的值。完成交换。
+
+
+
+[Why does javascript map function return undefined?](https://stackoverflow.com/questions/16037049/why-does-javascript-map-function-return-undefined)
+
+
+
+[Oracle创建序列，删除序列，得到序列的例子](https://www.cnblogs.com/rootq/articles/1089392.html)
+
+
+
+[vue中自定义按钮组件为什么要加.native](https://segmentfault.com/q/1010000011186651)
+
+ `.native` 修饰符就是用来注册元素的原生事件而不是组件自定义事件的
+
+
+
+[JS阻止冒泡和取消默认事件(默认行为)](http://caibaojian.com/javascript-stoppropagation-preventdefault.html)
+
+
+
+[git拉取远程分支并创建本地分支](<https://blog.csdn.net/tterminator/article/details/52225720>)
+
+
+
+[iView - A high quality UI Toolkit based on Vue.js](https://www.iviewui.com/)
+
+
+
+[Atom 列编辑](<https://atom.io/packages/Sublime-Style-Column-Selection>)
+
+[如何选择编辑器中的列（Atom，Notepad ++，Kate，VIM，Sublime，Textpad等）和IDE（NetBeans，IntelliJ IDEA，Eclipse，Visual Studio等）](<https://cloud.tencent.com/developer/ask/27877>)
+
+
+
+[oracle通过sql获取表结构](<https://blog.csdn.net/u010663021/article/details/77775721>)
+
+
+
+[Oracle CHAR，VARCHAR，VARCHAR2,nvarchar类型的区别与使用 ...](https://blog.csdn.net/javaloveiphone/article/details/8155827)
+
+varchar/varchar2 
+
+varchar是长度不固定的，比如说，你定义了varchar(20),当你插入abc，则在数据库中只占3个字节。 
+
+varchar同样区分中英文，这点同char。 
+
+varchar2基本上等同于varchar，它是oracle自己定义的一个非工业标准varchar，不同在于，varchar2用null代替varchar的空字符串 
+
+varchar/varchar2适用于长度不固定的，一般不含中文的情况 
+
+
+
+[Webstorm 文档注释模板及函数代码注释](<https://blog.csdn.net/qq_39108466/article/details/79712547>)
+
+
+
+[inner join with group by expression in oracle sql `[duplicate]`](https://stackoverflow.com/questions/15870331/inner-join-with-group-by-expression-in-oracle-sql)
+
+```sql
+SELECT
+	SG.ID,
+	SG.GROUP_NAME,
+	SG.DESCRIPTION,
+	SG.GROUP_TYPE,
+	SG.STATUS,
+	COUNT( SGR.STORE_GROUP_ID ) AS MEMBERQTY 
+FROM
+	STORE_GROUP SG
+	LEFT JOIN STORE_GROUP_REL SGR ON SG.ID = SGR.STORE_GROUP_ID 
+GROUP BY
+	（ SG.ID,
+	SG.GROUP_NAME,
+	SG.DESCRIPTION,
+	SG.GROUP_TYPE,
+	SG.STATUS,
+	SGR.STORE_GROUP_ID）
+```
+
+
+
+chrome 预览 markdown 文件：
+
+使用 Markdown Viewer 插件
+
+```
+✚ Local Files
+
+1. Navigate to `chrome://extensions`
+2. Locate Markdown Viewer and click on the `DETAILS` button
+3. Make sure that the `Allow access to file URLs` switch is turned on
+```
+
+需要在设置里允许该插件访问文件网址
