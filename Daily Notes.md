@@ -1123,7 +1123,7 @@ webstorm 展开与收起：
 
 
 
-<https://vue-loader.vuejs.org/en/features/scoped-css.html> 
+<https://vue-loader.vuejs.org/en/features/scoped-css.html>
 
 
 
@@ -1221,7 +1221,7 @@ classList 属性是只读的，但你可以使用 add() 和 remove() 方法修�
 
 增加：document.getElementById("myDIV").classList.add("mystyle", "anotherClass", "thirdClass");
 
-去除：document.getElementById("myDIV").classList.remove("mystyle"); 
+去除：document.getElementById("myDIV").classList.remove("mystyle");
 
 
 
@@ -1413,15 +1413,15 @@ array.splice(index1, 1 , array[index2])会将index1位置上的元素替换为in
 
 [Oracle CHAR，VARCHAR，VARCHAR2,nvarchar类型的区别与使用 ...](https://blog.csdn.net/javaloveiphone/article/details/8155827)
 
-varchar/varchar2 
+varchar/varchar2
 
-varchar是长度不固定的，比如说，你定义了varchar(20),当你插入abc，则在数据库中只占3个字节。 
+varchar是长度不固定的，比如说，你定义了varchar(20),当你插入abc，则在数据库中只占3个字节。
 
-varchar同样区分中英文，这点同char。 
+varchar同样区分中英文，这点同char。
 
-varchar2基本上等同于varchar，它是oracle自己定义的一个非工业标准varchar，不同在于，varchar2用null代替varchar的空字符串 
+varchar2基本上等同于varchar，它是oracle自己定义的一个非工业标准varchar，不同在于，varchar2用null代替varchar的空字符串
 
-varchar/varchar2适用于长度不固定的，一般不含中文的情况 
+varchar/varchar2适用于长度不固定的，一般不含中文的情况
 
 
 
@@ -1438,10 +1438,10 @@ SELECT
 	SG.DESCRIPTION,
 	SG.GROUP_TYPE,
 	SG.STATUS,
-	COUNT( SGR.STORE_GROUP_ID ) AS MEMBERQTY 
+	COUNT( SGR.STORE_GROUP_ID ) AS MEMBERQTY
 FROM
 	STORE_GROUP SG
-	LEFT JOIN STORE_GROUP_REL SGR ON SG.ID = SGR.STORE_GROUP_ID 
+	LEFT JOIN STORE_GROUP_REL SGR ON SG.ID = SGR.STORE_GROUP_ID
 GROUP BY
 	（ SG.ID,
 	SG.GROUP_NAME,
@@ -1532,3 +1532,17 @@ export default {
 
 collector必须初始时就指定Number类型，否则选中option之后不会显示。
 
+
+Brew 全称为Binary Runtime Environment for Wireless（无线二进制运行环境）。
+
+在Mac os系统中经常使用HomeBrew来安装相关应用
+
+Homebrew到底是什么个东西？
+
+linux系统有个让人头疼的通病，那就是软件包依赖，好在当前主流的两大发行版本都自带了解决方案，Red hat有yum，Ubuntu有apt-get。那么我们用Mac OSx系统怎么办？别担心，这一切Homebrew可以帮你搞定。
+
+Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。
+
+
+
+[BaiduPCS GO Mac安装指南]([https://github.com/iikira/BaiduPCS-Go/wiki/BaiduPCS-GO-Mac%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97](https://github.com/iikira/BaiduPCS-Go/wiki/BaiduPCS-GO-Mac安装指南))
