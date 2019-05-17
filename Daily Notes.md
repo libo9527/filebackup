@@ -1466,3 +1466,69 @@ chrome 预览 markdown 文件：
 ```
 
 需要在设置里允许该插件访问文件网址
+
+
+
+[如何使用 Mac 上的“文件共享”进行连接](<https://support.apple.com/zh-cn/HT204445>)
+
+
+
+[Vue冲突解决 [Vue warn]: The computed property "fields" is already defined in data.](https://www.jianshu.com/p/63d9540040af)
+
+
+
+el-form的表单验证：
+
+1. prop要和v-model绑定的属性名相同。
+
+2. v-model绑定的必须是el-form 所绑定对象下的属性
+
+   ```html
+   <el-form ref="form" :model="form" :rules="rules">
+   	<el-input v-model="name"></el-input> <!-- wrong -->
+     <el-input v-model="form.name"></el-input> <!-- right -->
+   </el-form>
+   ```
+
+
+
+.trim
+如果要自动过滤用户输入的首尾空白字符，可以给 v-model 添加 trim 修饰符：
+
+`<input v-model.trim="msg">`
+
+
+
+```html
+<template>
+  <el-form ref="assignForm" :model="collectTaskForm" label-width="120px" :rules="assignRules">
+    <el-form-item label="Collector:" prop="collector">
+      <el-select v-model="collectTaskForm.collector" style="display: block">
+        <el-option
+                   v-for="item in collectorOptions"
+                   :key="item.id"
+                   :label="item.name"
+                   :value="item.id"
+                   >
+        </el-option>
+      </el-select>
+    </el-form-item>
+  </el-form>
+  <span slot="footer" class="dialog-footer">
+    <el-button @click="assignDialog.visible = false">Cancel</el-button>
+    <el-button type="primary" @click="assignCollect">Assign</el-button>
+  </span>
+</template>
+
+<script>
+export default {
+  data () {
+    collectTaskForm: {
+        collector: {type: Number}
+      }
+  }
+</script>
+```
+
+collector必须初始时就指定Number类型，否则选中option之后不会显示。
+
