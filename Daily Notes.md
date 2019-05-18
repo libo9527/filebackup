@@ -1123,7 +1123,7 @@ webstorm 展开与收起：
 
 
 
-<https://vue-loader.vuejs.org/en/features/scoped-css.html> 
+<https://vue-loader.vuejs.org/en/features/scoped-css.html>
 
 
 
@@ -1221,7 +1221,7 @@ classList 属性是只读的，但你可以使用 add() 和 remove() 方法修�
 
 增加：document.getElementById("myDIV").classList.add("mystyle", "anotherClass", "thirdClass");
 
-去除：document.getElementById("myDIV").classList.remove("mystyle"); 
+去除：document.getElementById("myDIV").classList.remove("mystyle");
 
 
 
@@ -1413,15 +1413,15 @@ array.splice(index1, 1 , array[index2])会将index1位置上的元素替换为in
 
 [Oracle CHAR，VARCHAR，VARCHAR2,nvarchar类型的区别与使用 ...](https://blog.csdn.net/javaloveiphone/article/details/8155827)
 
-varchar/varchar2 
+varchar/varchar2
 
-varchar是长度不固定的，比如说，你定义了varchar(20),当你插入abc，则在数据库中只占3个字节。 
+varchar是长度不固定的，比如说，你定义了varchar(20),当你插入abc，则在数据库中只占3个字节。
 
-varchar同样区分中英文，这点同char。 
+varchar同样区分中英文，这点同char。
 
-varchar2基本上等同于varchar，它是oracle自己定义的一个非工业标准varchar，不同在于，varchar2用null代替varchar的空字符串 
+varchar2基本上等同于varchar，它是oracle自己定义的一个非工业标准varchar，不同在于，varchar2用null代替varchar的空字符串
 
-varchar/varchar2适用于长度不固定的，一般不含中文的情况 
+varchar/varchar2适用于长度不固定的，一般不含中文的情况
 
 
 
@@ -1438,10 +1438,10 @@ SELECT
 	SG.DESCRIPTION,
 	SG.GROUP_TYPE,
 	SG.STATUS,
-	COUNT( SGR.STORE_GROUP_ID ) AS MEMBERQTY 
+	COUNT( SGR.STORE_GROUP_ID ) AS MEMBERQTY
 FROM
 	STORE_GROUP SG
-	LEFT JOIN STORE_GROUP_REL SGR ON SG.ID = SGR.STORE_GROUP_ID 
+	LEFT JOIN STORE_GROUP_REL SGR ON SG.ID = SGR.STORE_GROUP_ID
 GROUP BY
 	（ SG.ID,
 	SG.GROUP_NAME,
@@ -1469,6 +1469,68 @@ chrome 预览 markdown 文件：
 
 
 
+[如何使用 Mac 上的“文件共享”进行连接](<https://support.apple.com/zh-cn/HT204445>)
+
+
+
+[Vue冲突解决 [Vue warn]: The computed property "fields" is already defined in data.](https://www.jianshu.com/p/63d9540040af)
+
+
+
+el-form的表单验证：
+
+1. prop要和v-model绑定的属性名相同。
+
+2. v-model绑定的必须是el-form 所绑定对象下的属性
+
+   ```html
+   <el-form ref="form" :model="form" :rules="rules">
+   	<el-input v-model="name"></el-input> <!-- wrong -->
+     <el-input v-model="form.name"></el-input> <!-- right -->
+   </el-form>
+   ```
+
+
+
+.trim
+如果要自动过滤用户输入的首尾空白字符，可以给 v-model 添加 trim 修饰符：
+
+`<input v-model.trim="msg">`
+
+
+
+```html
+<template>
+  <el-form ref="assignForm" :model="collectTaskForm" label-width="120px" :rules="assignRules">
+    <el-form-item label="Collector:" prop="collector">
+      <el-select v-model="collectTaskForm.collector" style="display: block">
+        <el-option
+                   v-for="item in collectorOptions"
+                   :key="item.id"
+                   :label="item.name"
+                   :value="item.id"
+                   >
+        </el-option>
+      </el-select>
+    </el-form-item>
+  </el-form>
+  <span slot="footer" class="dialog-footer">
+    <el-button @click="assignDialog.visible = false">Cancel</el-button>
+    <el-button type="primary" @click="assignCollect">Assign</el-button>
+  </span>
+</template>
+
+<script>
+export default {
+  data () {
+    collectTaskForm: {
+        collector: {type: Number}
+      }
+  }
+</script>
+```
+
+collector必须初始时就指定Number类型，否则选中option之后不会显示。
 
 
 Brew 全称为Binary Runtime Environment for Wireless（无线二进制运行环境）。
@@ -1488,4 +1550,3 @@ Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载
 
 
 [如何获取百度云下载直链- TateBrwonJava的博客- CSDN博客](https://blog.csdn.net/TateBrwonJava/article/details/82990235)
-
