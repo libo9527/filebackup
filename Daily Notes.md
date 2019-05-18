@@ -1485,3 +1485,7 @@ Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载
 
 [BaiduPCS GO Mac安装指南]([https://github.com/iikira/BaiduPCS-Go/wiki/BaiduPCS-GO-Mac%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97](https://github.com/iikira/BaiduPCS-Go/wiki/BaiduPCS-GO-Mac安装指南))
 
+
+
+[如何获取百度云下载直链- TateBrwonJava的博客- CSDN博客](https://blog.csdn.net/TateBrwonJava/article/details/82990235)
+
