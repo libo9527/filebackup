@@ -1489,7 +1489,7 @@ el-form的表单验证：
      <el-input v-model="form.name"></el-input> <!-- right -->
    </el-form>
    ```
-   
+
 3. `<el-form>` 标签中数据绑定要用 `:model` 不能用 `v-model`
 
    [vue使用填坑之:model和v-model的区别- baoyadong - 博客园](https://www.cnblogs.com/xuzhudong/p/8617487.html)
@@ -1629,7 +1629,7 @@ async mounted () {
 
 Oracle 中复杂查询中设计 clob 类型的字段时，如果报 `expected - got CLOB`
 
-可以尝试使用 `to_char` 
+可以尝试使用 `to_char`
 
 ```sql
 SELECT
@@ -1763,7 +1763,7 @@ type: 'warning'
 },
 ```
 
-原因：confirm 没加 `.catch(() => {})` 
+原因：confirm 没加 `.catch(() => {})`
 
 [这不是报错，只是被 reject 的 Promise 没有 catch。好像只有 Chrome 会这样。](<https://github.com/ElemeFE/mint-ui/issues/705>)
 
@@ -1890,3 +1890,4 @@ router.go(-1)
 [Echarts xAxis boundaryGap](https://www.cnblogs.com/xp1056/p/Echart.html)
 
 echarts boundaryGap留白属性
+[如何获取百度云下载直链- TateBrwonJava的博客- CSDN博客](https://blog.csdn.net/TateBrwonJava/article/details/82990235)
