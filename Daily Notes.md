@@ -1489,6 +1489,12 @@ el-form的表单验证：
      <el-input v-model="form.name"></el-input> <!-- right -->
    </el-form>
    ```
+   
+3. `<el-form>` 标签中数据绑定要用 `:model` 不能用 `v-model`
+
+   [vue使用填坑之:model和v-model的区别- baoyadong - 博客园](https://www.cnblogs.com/xuzhudong/p/8617487.html)
+
+
 
 
 
@@ -1546,3 +1552,341 @@ Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载
 
 
 [BaiduPCS GO Mac安装指南]([https://github.com/iikira/BaiduPCS-Go/wiki/BaiduPCS-GO-Mac%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97](https://github.com/iikira/BaiduPCS-Go/wiki/BaiduPCS-GO-Mac安装指南))
+
+
+
+[idea maven打包 install 报错The packaging for this project did not assign a file to the build artifact](https://www.cnblogs.com/bestxyl/p/9065897.html)
+
+
+
+Js 异步
+
+```js
+async mounted () {
+  this.sstFilter.locationOptions = await this.getLocation(null, 2)
+},
+  async getLocation (parentId, locationLevel) {
+    if (!locationLevel && locationLevel > 4) {
+      return null
+    }
+    let result = []
+    let _param = {
+      parentId: parentId,
+      locationLevel: locationLevel
+    }
+    let res = await http.post('cd/globallocation/findList', _param)
+    if (res && res.code === '200') {
+      res.data.sort(extra.sortBy('englishName'))
+      result = res.data.map(c => {
+        let r = {
+          id: c.id,
+          label: c.englishName,
+          value: c.englishName
+        }
+        if (c.locationLevel && c.locationLevel < 4) {
+          r.children = []
+          r.loading = false
+        }
+        return r
+      })
+    } else {
+      this.$message({
+        type: 'error',
+        message: res ? res.message ? res.message : 'System error, please try later.' : 'System error, please try later.'
+      })
+    }
+    return result
+  },
+```
+
+
+
+[delete 操作符- JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/delete)
+
+
+
+[分布式任务调度平台XXL-JOB](http://www.xuxueli.com/xxl-job/)
+
+
+
+修改 el-select 的 width
+
+[el-select 默认样式问题· Issue #2240 · ElemeFE/element · GitHub](https://github.com/ElemeFE/element/issues/2240)
+
+
+
+[如何给span设置宽度(width)？](https://coding1688.iteye.com/blog/1562652)
+
+给 `<span>` 标签设置宽度：
+
+需要先将 display 设置为 inline-block
+
+
+
+[cursor - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/cursor)
+
+
+
+Oracle 中复杂查询中设计 clob 类型的字段时，如果报 `expected - got CLOB`
+
+可以尝试使用 `to_char` 
+
+```sql
+SELECT
+            c.ID,
+            c.GROUP_NAME,
+            c.DESCRIPTION,
+            c.GROUP_TYPE,
+            c.STATUS,
+            TO_CHAR(c.STORE_FILTERS),
+            COUNT( d.STORE_GROUP_ID ) AS MEMBERQTY,
+            su1.name AS assigner,
+            su2.name AS assignee,
+            e.create_date AS assignedDate,
+            c.ASSIGNED_START_DATE,
+            c.ASSIGNED_END_DATE,
+            c.COMMISSION
+        FROM
+        (
+          SELECT
+          a.ID,
+          a.GROUP_NAME,
+          a.DESCRIPTION,
+          a.GROUP_TYPE,
+          a.STATUS,
+          a.STORE_FILTERS,
+          b.ID AS CALL_TASK_DETAILS_ID,
+          b.CALL_TASK_ID,
+          b.ASSIGNED_START_DATE,
+          b.ASSIGNED_END_DATE,
+          b.COMMISSION,
+          ROW_NUMBER () OVER ( PARTITION BY b.STORE_GROUP_ID ORDER BY b.create_date DESC ) rn
+          FROM
+          STORE_GROUP a
+          LEFT JOIN CALL_TASK_DETAILS b ON a.ID = b.STORE_GROUP_ID
+          WHERE
+          A.DEL_FLAG = 0
+        ) c
+        LEFT JOIN STORE_GROUP_REL d ON c.ID = d.STORE_GROUP_ID
+        LEFT JOIN CALL_TASK e ON e.id = c.CALL_TASK_ID
+        LEFT JOIN sys_user su1 ON e.CREATE_BY = su1.id
+        LEFT JOIN sys_user su2 ON e.assigned_id = su1.id
+        WHERE
+            ( c.rn = 1 OR c.CALL_TASK_DETAILS_ID IS NULL )
+						AND e.assign
+        GROUP BY
+            (
+              c.ID,
+              c.GROUP_NAME,
+              c.DESCRIPTION,
+              c.GROUP_TYPE,
+              c.STATUS,
+              TO_CHAR(c.STORE_FILTERS),
+              su1.name,
+              su2.name,
+              e.create_date,
+              c.ASSIGNED_START_DATE,
+              c.ASSIGNED_END_DATE,
+              c.COMMISSION
+            )
+```
+
+
+
+[Oracle两表关联，只取B表的第一条记录](https://www.cnblogs.com/luxd/p/8527457.html)
+
+使用 `row_number() over`
+
+```sql
+SELECT
+                a.ID,
+                a.GROUP_NAME,
+                a.DESCRIPTION,
+                a.GROUP_TYPE,
+                a.STATUS,
+                a.STORE_FILTERS,
+                b.ID AS CALL_TASK_DETAILS_ID,
+                b.CALL_TASK_ID,
+                b.ASSIGNED_START_DATE,
+                b.ASSIGNED_END_DATE,
+                b.COMMISSION,
+                ROW_NUMBER () OVER ( PARTITION BY b.STORE_GROUP_ID ORDER BY b.create_date DESC ) rn
+            FROM
+                STORE_GROUP a
+                LEFT JOIN CALL_TASK_DETAILS b ON a.ID = b.STORE_GROUP_ID
+            WHERE
+                A.DEL_FLAG = 0
+```
+
+
+
+Error in v-on handler: "TypeError: Cannot set property 'type' of undefined"
+
+```html
+<span slot="footer" class="dialog-footer">
+  <el-button type="primary" @click="saveSubmit()">Save</el-button>
+</span>
+```
+
+```js
+saveSubmit () {
+  this.$refs.storeGroupForm.validate((valid) => {
+    if (valid) {
+      let res = this.$api.storeGroup.save(this.editDialog.storeGroup)
+      if (res.code === '200') {
+        this.$message.success('Edit Success!')
+        this.cancelEdit()
+        this.getPage()
+      } else {
+        this.$message.error(res.message)
+      }
+    } else {
+      return false
+    }
+  })
+},
+```
+
+原因：请求前没加 `await` ，原理未知。。。
+
+
+
+Uncaught (in promise) cancel
+
+```js
+confirmDelete (storeGroupId) {
+this.$confirm('Confirm deleting operation?', 'Confirm', {
+confirmButtonText: 'OK',
+cancelButtonText: 'Cancel',
+type: 'warning'
+}).then(() => this.submitDelete(storeGroupId))
+},
+```
+
+原因：confirm 没加 `.catch(() => {})` 
+
+[这不是报错，只是被 reject 的 Promise 没有 catch。好像只有 Chrome 会这样。](<https://github.com/ElemeFE/mint-ui/issues/705>)
+
+
+
+[手摸手，带你用vue撸后台 系列一(基础篇)](https://segmentfault.com/a/1190000009275424)
+
+
+
+springboot中查看mybatis执行的sql语句，只用将日志级别设置为debug就可以了
+
+
+
+JSON parse error: For input string: "05/19/2019";
+
+原因，json默认的日期格式是 '2019-05-19'
+
+解决方法，在日期类型的字段上加上 `@JSONField(format = "MM/dd/yyyy")`
+
+
+
+[挖掘IntelliJ IDEA的调试功能](http://qinghua.github.io/intellij-idea-debug/)
+
+
+
+查看是否异步执行的方法：
+
+```java
+private final ThreadFactory threadNameFactory = new ThreadFactoryBuilder().setNameFormat("store-group-thread-%d").build();
+private final ExecutorService threadPool = new ThreadPoolExecutor(1, 3,
+                                                                  0L, TimeUnit.MILLISECONDS,
+                                                                  new LinkedBlockingQueue<>(),threadNameFactory);
+
+public StoreGroupVo updateDynamicGroup(StoreGroupVo storeGroupVo) {
+  List<StoreVo> storeList = storeService.findStoreList(JSON.parseObject(storeGroupVo.getStoreFilters(), CustomerFilterVo.class));
+  storeGroupVo.setMemberQTY(storeList.size());
+  Long operator = UserUtils.getUserId();
+  threadPool.submit(() -> {
+    log.info("aabbcc");
+    groupTo(storeList.stream().map(storeVo -> storeVo.getId()).collect(Collectors.toList()), storeGroupVo.getId(), operator);
+  });
+  log.info("bbccaa");
+  return storeGroupVo;
+}
+```
+
+
+
+[Element Form表单布局（一行多列） - ICode9](https://www.icode9.com/content-4-193448.html)
+
+
+
+[VUE的for循环一行两列 - Linux下修改mysql ROOT密码](http://hacksteven.com/?p=173)
+
+
+
+[html怎样让两个语句显示在同一行- xiaoxiaohui520134的博客- CSDN博客](https://blog.csdn.net/xiaoxiaohui520134/article/details/51800968)
+
+
+
+[vue关于父组件调用子组件的方法- Baby_加油_的博客- CSDN博客](https://blog.csdn.net/qq_34664239/article/details/80386153)
+
+
+
+[当下拉列表数据过大时，该如何应对？](<https://juejin.im/post/5be534086fb9a049ef2615e2#heading-11>)
+
+
+
+[从Windows 过度到Mac 必备快捷键对照表- IntelliJ IDEA 使用教程- 极客 ...](https://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-win-mac.html)
+
+
+
+[JS中变量名作为if条件的真/假- gulingeagle的专栏- CSDN博客](https://blog.csdn.net/gulingeagle/article/details/8757039)
+
+
+
+[console对象-- JavaScript 标准参考教程（alpha）](https://javascript.ruanyifeng.com/stdlib/console.html)
+
+`console.log`方法支持以下占位符，不同类型的数据必须使用对应的占位符。
+
+- `%s` 字符串
+- `%d` 整数
+- `%i` 整数
+- `%f` 浮点数
+- `%o` 对象的链接
+- `%c` CSS 格式字符串
+
+
+
+[Object.keys()](<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys>)
+
+```js
+Object.keys(this.statusList).forEach((prop) => {
+  if (this.statusList[prop] === 'Assigned') {
+    node.data.status = prop
+    console.log('node', node)
+  }
+})
+```
+
+
+
+[编程式的导航| Vue Router](https://router.vuejs.org/zh/guide/essentials/navigation.html)
+
+
+
+关于浅析VO、DTO、DO、PO的概念、区别和用处 [这里](http://blog.csdn.net/zjrbiancheng/article/details/6253232)有很好的讲解
+
+
+
+[mybatis collection 传递Map参数- 神手-追魂的个人空间- OSCHINA](https://my.oschina.net/berthome/blog/1817862)
+
+
+
+[编程式的导航](https://router.vuejs.org/zh/guide/essentials/navigation.html)
+
+```js
+// 后退一步记录，等同于 history.back()
+router.go(-1)
+```
+
+
+
+[Echarts xAxis boundaryGap](https://www.cnblogs.com/xp1056/p/Echart.html)
+
+echarts boundaryGap留白属性
