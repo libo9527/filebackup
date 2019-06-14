@@ -224,3 +224,95 @@ vue的模版语法（即插值表达式，v-text，v-html等）中都是一个js
 
 
 计算属性有缓存的功能，即计算属性其实是可以用方法的方式来实现相同的功能，但当其他属性值改变时，页面重新渲染，此时方法会重新执行一次，但计算属性只有当其涉及到的属性发生变化时才会重新执行，其他属性变化所导致的页面重新渲染并不会导致计算属性的重新计算！
+
+### 插槽
+
+**插槽，也就是 slot，是组件的一块 HTML 模板，这块模板显示不显示、以及怎样显示由父组件来决定。但是插槽显示的位置却由子组件自身决定，slot写在组件template的什么位置，父组件传过来的模板将来就显示在什么位置。**
+
+#### 作用域插槽
+
+官方叫作用域插槽，实际上，对比匿名/具名插槽，我们可以叫它带数据的插槽。
+
+### 组件
+
+vue 组件分为全局组件和局部组件，全局组件使用 `Vue.component()` 方法注册，局部组件使用 vue 实例的 `compoments` 属性注册。
+
+### props
+
+> [vue props监听变化的几种方式](<https://www.jianshu.com/p/ff708a773dc0>)
+
+prop默认是单向绑定：当父组件的属性变化时，将传递给子组件，但是反过来则不会传递。
+
+可以使用`.sync`显式地指定双向绑定，这使得子组件的数据修改会回传给父组件。
+
+```vue
+<child-component v-bind:my-name.sync="name" v-bind:my-age.sync="age"></child-component>
+```
+
+可以使用`.once`显式地指定单次绑定，单次绑定在建立之后不会同步之后的变化，这意味着即使父组件修改了数据，也不会传递给子组件。
+
+```vue
+<my-component v-bind:my-name.once="name" v-bind:my-age.once="age"></my-component>
+```
+
+**注意：2.3.0版本将 v-bind 的 .once 和 .sync 修饰符移除了**
+
+> [v-bind 的 .once和.sync 修饰符](https://cn.vuejs.org/v2/guide/migration.html#v-bind-的-once和-sync-修饰符-移除)
+>
+> Props 现在只能单向传递。为了对父组件产生反向影响，子组件需要显式地传递一个事件而不是依赖于隐式地双向绑定。
+
+### 路由
+
+//所有权限通用路由表
+//如首页和登录页和一些不用权限的公用页面
+export const constantRouterMap
+
+
+
+//异步挂载的路由
+//动态需要根据权限加载的路由表
+export const asyncRouterMap
+
+### 引入 Font-Awesome
+
+> [Vue 第三方字体图标引入 Font Awesome](<https://blog.csdn.net/qq_27868533/article/details/79638725>)
+
+1. npm 安装 font-awesome
+
+   ```shell
+   npm install font-awesome --save-dev
+   ```
+
+2. main.js 中引入 font-awesome
+
+   ```shell
+   import 'font-awesome/scss/font-awesome.scss'
+   ```
+
+3. 组件中使用 font-awesome
+
+   ```vue
+   <i class="fa fa-plus"></i>
+   ```
+
+### 使用 iconfont
+
+> [在vue项目中引入iconfont字体图标]([https://hehuiyun.github.io/2018/01/22/%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BC%95%E5%85%A5iconfont%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87/](https://hehuiyun.github.io/2018/01/22/在vue项目中引入iconfont字体图标/))
+
+1. [官网](www.iconfont.cn)注册
+
+2. 新建项目，添加图标到项目
+
+3. 在项目的 index.html 中引入 iconfont 的在线链接
+
+   ```html
+   <link rel="stylesheet" href="//at.alicdn.com/t/font_1243237_q38qtx4df3.css">
+   ```
+
+4. 组件中使用
+
+   ```vue
+   <i class="iconfont iconDollar"></i>
+   ```
+
+   

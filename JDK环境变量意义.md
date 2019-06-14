@@ -1,5 +1,7 @@
 ## JDK环境变量意义
 
+> [Java为什么要设置环境变量、JAVA_HOME](<https://blog.csdn.net/u010297957/article/details/51334951>)
+
 JAVA_HOME
 
 PATH

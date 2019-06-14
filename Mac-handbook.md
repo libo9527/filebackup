@@ -18,11 +18,15 @@
 
 ### 查看当前所有窗口
 
-`Command + ↑`
+`Control + ↑`
 
 ### 显示最前面的应用的所有窗口
 
-`Command + ↓`
+`Control + ↓`
+
+### 切换同一应用下不同窗口
+
+`Command + ~`
 
 ### 输入特殊字符
 
@@ -35,6 +39,34 @@
 ### 切换全屏窗口
 
 `control + ← / →`
+
+### 最大化窗口
+
+`control + command + F`
+
+### 最小化窗口
+
+`Command + M`
+
+### 截图
+
+> [5种方法来在Mac OS X上截取屏幕截图 - wikiHow](https://zh.wikihow.com/在Mac-OS-X上截取屏幕截图)
+
+- 对整个屏幕进行截图
+
+  `command + shift + 3`
+
+- 对屏幕的一部分进行截图
+
+  `Command + Shift + 4 + 鼠标拉选`
+
+- 对打开的窗口进行截图
+
+  `Command + Shift + 4 + Space + 鼠标点选`
+
+### 回到桌面
+
+`command + F3` / `fn + f11`
 
 ## Command Line Tools
 
@@ -79,4 +111,10 @@ Mac 下使用 git 需要安装Command Line Tools
 ### 移动代码
 
 `command + shift + ↑ / ↓`
+
+## Mac 下 WebStorm 快捷键
+
+### 竖向选择
+
+`command + shift + 鼠标选择`
 
