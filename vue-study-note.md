@@ -315,4 +315,16 @@ export const asyncRouterMap
    <i class="iconfont iconDollar"></i>
    ```
 
-   
+
+### Vue 项目中使用 Sass
+
+1. 安装 Sass 依赖
+
+   ```shell
+   npm install --save-dev sass-loader
+   //sass-loader依赖于node-sass
+   npm install --save-dev node-sass
+   ```
+
+Sass
+

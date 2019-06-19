@@ -36,3 +36,13 @@ console.log(array1.concat(array2));
 
 > [JavaScript 数组遍历方法的对比- 掘金](https://juejin.im/post/5a3a59e7518825698e72376b)
 
+for-in 语句
+一般会使用for-in来遍历对象的属性的,不过属性需要 enumerable,才能被读取到.
+for-in 循环只遍历可枚举属性。一般常用来遍历对象，包括非整数类型的名称和继承的那些原型链上面的属性也能被遍历。像 Array 和 Object 使用内置构造函数所创建的对象都会继承自 Object.prototype 和 String.prototype 的不可枚举属性就**不能遍历**了。
+
+
+
+
+
+
+

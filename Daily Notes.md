@@ -1,23 +1,4 @@
-
-
-
-
-
-IINA 设置快进间隔和倍速间隔
-
-
-
-
-
-
-
-
-
-
-
 <https://segmentfault.com/a/1190000012015667>
-
-
 
 
 
@@ -46,15 +27,7 @@ idea 热部署需重启项目的情况：
 
 
 
-链接：[https://pan.baidu.com/s/1ETjfrTJeSFNOfss_8Di0Ew ](https://pan.baidu.com/s/1ETjfrTJeSFNOfss_8Di0Ew)
-
-提取码：5x08
-
-
-
 <https://www.jianshu.com/p/76d38bd28fa6>
-
-
 
 
 
@@ -62,50 +35,7 @@ idea 热部署需重启项目的情况：
 
 
 
-
-
-
-
 <https://www.zmrenwu.com/courses/vue2x-todo-tutorial/materials/38/>
-
-
-
-
-
-
-
-使用 Element UI 需要在 webpack.config.js 中配置 file-loader
-
-因为 Element UI 的 css 中引用了字体文件（element-icons.ttf），而 webpack 无法解析该文件，所以需要添加如下配置
-
-http://element.eleme.io/1.4/#/zh-CN/component/quickstart
-
-
-	{
-	test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
-	loader: 'file-loader'
-	}
-
-
-
-Mac 睡眠状态会断网
-<https://www.zhihu.com/question/31019313>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -123,19 +53,7 @@ Vue url 不能是 /cd/deal/ 可以是 /cd/deal
 
 
 
-
-
-
-
-
-
-
-
-
-
 [Oracle dblink详解(转) - sumsen - 博客园](https://www.cnblogs.com/sumsen/archive/2013/03/04/2943471.html)
-
-
 
 
 
@@ -151,27 +69,7 @@ Vue url 不能是 /cd/deal/ 可以是 /cd/deal
 
 
 
-
-
 <https://blog.csdn.net/sdta25196/article/details/76718617>
-
-
-
-
-
-
-
-
-
-
-
-
-
-项目中的 icon 上怎么搞的？
-
-
-
-公司电脑上有曹组长的一次git操作日志
 
 
 
@@ -187,27 +85,7 @@ https://github.com/CntChen/cntchen.github.io/issues/15
 
 
 
-
-
-
-
-
-
-
-
-
-
 popper-options  [popper.js](https://popper.js.org/documentation.html) 的参数 参考 [popper.js](https://popper.js.org/documentation.html) 文档  
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -270,31 +148,11 @@ popper-options  [popper.js](https://popper.js.org/documentation.html) 的参数 
 
 
 
-<http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html>
-
-`align-items`属性定义项目在交叉轴上如何对齐。
 
 
 
-<http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html>
-
-`justify-content`属性定义了项目在主轴上的对齐方式。
-
-- `space-between`：两端对齐，项目之间的间隔都相等。
 
 
-
-<https://blog.csdn.net/leedaning/article/details/44976319>
-
-
-
-[英文名字中间的点怎么打_百度知道](https://zhidao.baidu.com/question/212960560.html)
-
-中文输入下按 `~`
-
-
-
-[创建与合并分支- 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000)
 
 
 
@@ -1427,3 +1285,84 @@ Atom
 
 <https://www.zhihu.com/question/34544815>
 
+
+
+[数组去重合并](<https://blog.csdn.net/qq_39207948/article/details/80369606>)
+
+<https://blog.csdn.net/qingmengwuhen1/article/details/79876813>
+
+
+
+[Array.prototype.find() - JavaScript | MDN - Mozilla](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+
+
+
+[嵌套的 Dialog](<https://element.eleme.io/2.0/#/zh-CN/component/dialog#qian-tao-de-dialog>)
+
+如果需要在一个 Dialog 内部嵌套另一个 Dialog，需要使用 `append-to-body` 属性。
+
+
+
+[vue项目如何刷新当前页面](<https://blog.csdn.net/qq_16772725/article/details/80467492>)
+
+
+
+[vue 父组件传值给子组件遇到的生命周期问题](<https://blog.csdn.net/qq_36416878/article/details/80219134>)
+
+如果要在子组件打印父组件传来的数据必须是在beforeUpdate和updated生命周期才能监听的到，
+
+
+
+[Object.assign()](<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/assign>)
+
+
+
+[Uncaught SyntaxError: Unexpected token u in JSON at position 0 ...](https://stackoverflow.com/questions/46613243/uncaught-syntaxerror-unexpected-token-u-in-json-at-position-0)
+
+
+
+[通过 sass-resources-loader 全局注册 Sass/Less 变量](https://www.cnblogs.com/cangqinglang/p/10573151.html)
+
+
+
+[vue.js自定义组件上使用v-model](<https://juejin.im/post/5afd95fa6fb9a07a9e4d72a8>)
+
+
+
+[如何在Mac 上强制退出应用- Apple 支持](https://support.apple.com/zh-cn/HT201276)
+
+
+
+[Vue.js 技术揭秘](<https://ustbhuangyi.github.io/vue-analysis/>)
+
+
+
+[Vue Element.ui tree, emit reload event](https://stackoverflow.com/questions/47855365/vue-element-ui-tree-emit-reload-event)
+
+
+
+[10个最好的JavaScript在线编辑器 - Education Ecosystem Blog](https://blog.education-ecosystem.com/10个最好的javascript在线编辑器/)
+
+
+
+[Oracle / PLSQL: Check Constraints - TechOnTheNet](https://www.techonthenet.com/oracle/check.php)
+
+
+
+[git 删除stash 的内容](<https://blog.csdn.net/csdnmuyi/article/details/80237173>)
+
+查看 stash 列表
+
+git stash list
+
+清空 stash 列表
+
+git stash clear
+
+删除第一个队列
+
+git stash drop stash@{0}
+
+
+
+<https://learnku.com/>

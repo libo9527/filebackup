@@ -48,3 +48,9 @@ select * from deal where del_flag = 0 and deal_content like '%' || 'a' || '%'
 
 在具有层次结构的表中竟然需要递归查询。最经典的就是 Address 的查询。
 
+### CHECK
+
+```sql
+ALTER TABLE STORE_GROUP ADD CONSTRAINT STORE_FILTERS_JSON_CHECK CHECK ( STORE_FILTERS IS json );
+```
+
