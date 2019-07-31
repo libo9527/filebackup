@@ -36,3 +36,36 @@ git branch ...
 git stash apply
 ```
 
+
+
+[Git 中 GitHub 账号的管理](https://libo9527.github.io/2019/06/22/Account-Management-in-Git/)
+
+### 分支重命名
+
+#### 重命名本地分支
+
+```shell
+$ git branch -m oldBranchName newBranchName
+```
+
+重命名远程分支
+
+1. 删除远程分支
+
+   ```shell
+   $ git push --delete origin oldBranchName
+   ```
+
+2. 重命名本地分支
+
+   ```shell
+   $ git branch -m oldBranchName newBranchName
+   ```
+
+3. 推送到远程分支
+
+   ```shell
+   git push --set-upstream origin newBranchName
+   ```
+
+   

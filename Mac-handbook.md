@@ -72,6 +72,10 @@
 
 `command + F3` / `fn + f11`
 
+### 窗口缩放
+
+`command + '+' / '-'`
+
 ## Command Line Tools
 
 > [Mac安装Command Line Tools](<https://www.jianshu.com/p/308d7be8b8df>)
@@ -122,3 +126,52 @@ Mac 下使用 git 需要安装Command Line Tools
 
 `command + shift + 鼠标选择`
 
+## Terminal
+
+#### 查看命令手册
+
+```shell
+$ man command
+```
+
+### 复制粘贴
+
+pbcopy / pbpaste
+
+实例：
+
+- 将生成的 SSH 公钥复制到剪切板
+
+  ```shell
+  $ pbcopy < ~/.ssh/id_sra.pub
+  # or
+  $ cat ~/.ssh/id_sra.pub | pbcopy
+  ```
+
+### 打开目录或文件
+
+open
+
+> **-n**  Open a new instance of the application(s) even if one is already running.
+
+实例：
+
+- 在 finder 中打开当前目录
+
+  ```shell
+  $ open .
+  ```
+
+- 在 Atom 中打开指定文件
+
+  ```shell
+  $ open xxx.txt -a atom
+  ```
+
+- 微信双开
+
+  ```shell
+  $ open -n /Applications/WeChat.app/Contents/MacOS/WeChat
+  ```
+
+  

@@ -1366,3 +1366,460 @@ git stash drop stash@{0}
 
 
 <https://learnku.com/>
+
+
+
+[当绑定空的验证对象时, 会导致el-input组件输入框无法输入,将其type ...](https://github.com/ElemeFE/element/issues/1009)
+
+
+
+[Axure 9 注册码](<https://blog.csdn.net/zff980320/article/details/89634536>)
+
+axure rp pro 9.0 Team团队版：
+被授权人：www.ddooo.com
+授权秘钥：BaOifFBSUZ8tROgZzdfn/TV77k8+D8lVumI5alvEHXctoJNVeSR77YlckA+oAJKE
+
+
+
+[Axure RP 9 培训教程：Gif动画＋示例＋QQ答疑教学](http://www.webppd.com/thread-19496-1-1.html)
+
+
+
+[liangxiaojuan/vue-todos: vue最新实战项目教程，从零开始 ... - GitHub](https://github.com/liangxiaojuan/vue-todos)
+
+
+
+<http://www.todolist.cn/>
+
+
+
+[史上最简单的Spring Cloud教程](<https://github.com/forezp/SpringCloudLearning>)
+
+
+
+[JDK源码阅读顺序](<https://blog.csdn.net/qq_21033663/article/details/79571506>)
+
+
+
+[Spring Boot 实现原理与源码解析系统 —— 精品合集](http://www.iocoder.cn/Spring-Boot/good-collection/)
+
+
+
+<https://github.com/ElemeFE/element/issues/3217>
+
+<https://github.com/ElemeFE/element/issues/1534>
+
+
+
+[Spring Boot(六)：如何优雅的使用 Mybatis](https://www.cnblogs.com/ityouknow/p/6037431.html)
+
+
+
+git config
+[GIT-查看config配置信息](https://www.cnblogs.com/merray/p/6006411.html)
+
+config 配置有system级别 global（用户级别） 和local（当前仓库）三个
+
+优先级依次递增，也就是配置冲突时优先使用 local 级别的。
+
+ 底层配置会覆盖顶层配置 分别使用 `--system/global/local` 可以定位到配置文件
+
+查看系统config
+
+```
+`git config --system --list`
+```
+
+　　
+
+查看当前用户（global）配置
+
+```
+`git config --global  --list`
+```
+
+ 
+
+查看当前仓库配置信息
+
+```
+`git config --``local`  `--list`
+```
+
+
+
+[git 切换远程分支- liuhaomatou的专栏- CSDN博客](https://blog.csdn.net/liuhaomatou/article/details/54412071)
+
+git clone只能clone远程库的master分支，无法clone所有分支，解决办法如下：
+1. 找一个干净目录，假设是git_work
+2. cd git_work
+3. git clone http://myrepo.xxx.com/project/.git ,这样在git_work目录下得到一个project子目录
+4. cd project
+5. git branch -a，列出所有分支名称如下：
+remotes/origin/dev
+remotes/origin/release
+6. git checkout -b dev origin/dev，作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
+7. git checkout -b release origin/release，作用参见上一步解释
+8. git checkout dev，切换回dev分支，并开始开发。
+
+
+
+[如何参与一个 GitHub 开源项目？](<https://blog.csdn.net/lanxuezaipiao/article/details/23546349>)
+
+[Github上怎么修改别人的项目并且提交给原作者！图文并茂！](<https://blog.csdn.net/qq_26787115/article/details/52133008>)
+
+
+
+
+
+
+
+[HTMLElement.offsetTop - Web API 接口参考| MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/offsetTop)
+
+
+
+[触摸事件- Web API 接口参考| MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Touch_events)
+
+
+
+
+
+
+
+[Java SpringBoot 循环依赖问题](https://wars.cat/blog/index.php/archives/14/)
+
+循环依赖发生于使用构造函数注入的时候，其他注入方式不会发生此问题，
+因为其他方式会在程序用到这个依赖时，才会注入，而不是发生在Spring Context加载阶段。
+
+
+
+![](http://www.w3school.com.cn/i/kaikeba.gif)https://s.growingio.com/0W5deo
+
+
+
+[[CSS\]图片水平排列并且有固定间隔- 我是涛锅- CSDN博客](https://blog.csdn.net/qq807081817/article/details/49099401)
+
+
+
+[如何修改Mac文件默认打开方式-百度经验](https://jingyan.baidu.com/article/d5a880ebdd3b2f13f147cc1c.html)
+
+
+
+Design Music logo, @2, @3.
+
+
+
+[CSS之Position详解](https://www.cnblogs.com/Zigzag/archive/2009/02/19/position.html)
+
+
+
+https://www.leiyun.org/sf/8a9f0eb75aced5731b91fc109c9aba44.html
+
+[慕课网2018年全站付费资源共800G百度网盘资源免费分享- 福利巢](https://www.fulichao.com/7383.html)
+
+
+
+[Vue 设置 Script 标签首层不缩进](https://www.jianshu.com/p/622c463ff925)
+
+
+
+
+
+将本地的已有项目关联到github上的新的项目上
+在github上新建一个仓库，然后在本地仓库中执行git remote add origin git@github.com:stormzhang/test.git
+origin是仓库的名字，可能你的本地项目关联着几个仓库，你可以根据仓库的名字
+git push origin master 将代码提交到不同仓库中，可以指定分支
+然后执行git pull origin master 先将github上的代码pull下来
+然后在git push origin master
+
+
+
+
+
+[vue-cli的build的文件夹下没有dev-server.js文件，怎么配置mock数据。---mock数据配置(一)](https://juejin.im/post/5aba11da51882577b45f0ad1)
+
+
+
+[百度云盘HTML5视频倍速播放]([https://greasyfork.org/zh-CN/scripts/374693-%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9B%98html5%E8%A7%86%E9%A2%91%E5%80%8D%E9%80%9F%E6%92%AD%E6%94%BE](https://greasyfork.org/zh-CN/scripts/374693-百度云盘html5视频倍速播放))
+
+
+
+[CSS秘密花园： Sticky footers](https://www.w3cplus.com/css3/css-secrets/sticky-footers.html)
+
+
+
+[2019年Web前端最新导航（常见前端框架、前端大牛）](https://www.cnblogs.com/qianguyihao/p/10701923.html)
+
+
+
+[前端代码乱糟糟？是时候引入代码质量检查工具了](https://www.cnblogs.com/imwtr/p/9189414.html)
+
+
+
+[关于局部安装npm模块找不到命令的问题分析及解决方案](https://blog.csdn.net/qq_21998595/article/details/80460673)
+
+命令行运行 npm 局部安装的包：
+
+1. 在相应命令前加上路径 `node_modules/.bin/`
+
+   例如：`node_modules/.bin/lessc 1-nest.less test.css`
+
+2. package.json 中配置 scripts
+
+
+
+快速生成`package.json`文件
+
+```shell
+# --yes 参数能够帮助我们快速生成默认的package.json
+npm init --yes
+```
+
+
+
+webstorm 多行输入
+
+- 连续多行输入
+
+  option + shift + 鼠标下拉选中连续行
+
+- 隔行多行输入
+
+  option + 鼠标点击多行选中
+
+
+
+各种在线课程平台
+
+[Udemy](http://www.udemy.com/) 
+
+[Codecademy](https://www.codecademy.com/)
+
+
+
+WebStorm Mac 下 keymap 一览表
+
+**[PDF]**[DEFAULT OS X KEYMAP - JetBrains](https://resources.jetbrains.com/storage/products/webstorm/docs/WebStorm_ReferenceCard.pdf)
+
+
+
+[StringEscapeUtils的使用](https://www.cnblogs.com/mouseIT/p/4929725.html)
+
+
+
+[RequestMapping注解中consumes与produces的区别](https://yxjajl.iteye.com/blog/2410047)
+
+
+
+@RequestPart 注解
+
+https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestPart.html
+
+https://blog.csdn.net/wd2014610/article/details/79727061
+
+
+
+CSV是最通用的一种文件格式，它可以非常容易地被导入各种PC表格及数据库中。 此文件，一行即为数据表的一行。生成数据表字段用半角逗号隔开。 
+
+CSV是文本文件,用记事本就能打开,XLS是二进制的文件只有用EXCEL才能打 
+
+
+
+[常见 content-type对应表](https://blog.csdn.net/xiaoyu19910321/article/details/79279364)
+
+| 文件扩展名 | Content-Type(Mime-Type)                                      |
+| ---------- | ------------------------------------------------------------ |
+| .xlsx      | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+
+
+
+W3c shool 并不是 W3C
+
+
+
+[POI快速入门教程 | HSSF，XSSF，SXSSF的区别](https://blog.csdn.net/SudaDays/article/details/90669237)
+
+> https://poi.apache.org/components/spreadsheet/
+>
+> https://poi.apache.org/apidocs/4.1/
+
+简单的说，HSSF对应旧的xls格式，XSSF对应新的xlsx格式，SXSSF是在XSSF的基础上，支持导出大批量的excel数据。
+
+
+
+VMware Fusion 11序列号
+7HYY8-Z8WWY-F1MAN-ECKNY-LUXYX
+
+
+
+国外知名ae教程作者 AK(Andrew Kramer)
+
+
+
+[pr入门基础教程第20节：电视剧，电影，片尾字幕制作](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__biz%3DMzU3MDI4NTM5Mg%3D%3D%26mid%3D2247483769%26idx%3D4%26sn%3Dc76d4afd6d7d95eb9bab0e054672b431%26chksm%3Dfcf08d46cb870450bf9e7f505e00af46bb739426a9b998c55f118d7f48f022785ec7f0b923f8%26scene%3D21%23wechat_redirect)
+
+[oeasy是啥？oeasy是给想学没钱学的老百姓做的教程。本人很爱玩，也很爱学习，希望把玩中学的经验分享给大家。](http://oeasy.org/)
+
+
+
+
+
+有三个标签是允许跨域加载资源：
+
+- `<img src=XXX>`
+- `<link href=XXX>`
+- `<script src=XXX>`
+
+
+
+H5 网页布局：
+
+vh 是一个新的单位，表示的是屏幕的高度，还有一个对应的宽度属性 vw
+
+**让容器高度充满这个屏幕**
+
+在容器内容很少的情况下，要想让这个容器充满整个屏幕可以这样：
+
+```css
+.container{
+  min-height: 100vh
+}
+```
+
+
+
+[Chrome插件“别颓啦” – 会背单词才能打开喜欢的网站](https://www.3haow.com/www-bietui-la/)
+
+
+
+[关闭Vue计算属性自带的缓存功能](https://blog.csdn.net/qq_24147051/article/details/77645970)
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
+
+
+
+https://blog.csdn.net/liyuming0000/article/details/49531919
+
+
+
+[Oracle中TO_DATE格式- D董一点- 博客园](https://www.cnblogs.com/ajian/archive/2009/03/25/1421063.html)
+
+
+
+[Oracle trunc()函数的用法](https://www.cnblogs.com/xiaoyudz/archive/2011/03/18/1988467.html)
+
+[oracle查询一年之内的记录，一个月之内的记录。](https://zx-code.iteye.com/blog/1895756)
+
+https://blog.csdn.net/wanghai__/article/details/4813404
+
+
+
+http://www.voidcn.com/article/p-rtatszoj-zz.html
+
+https://blog.csdn.net/wqh8522/article/details/79646934
+
+
+
+https://stackoverflow.com/questions/8892360/convert-set-to-list-without-creating-new-list
+
+
+
+[oracle查询叶子节点](https://sujunfei.iteye.com/blog/664003)
+
+
+
+https://blog.csdn.net/huoyin/article/details/1921148
+
+
+
+https://osric.com/chris/accidental-developer/2015/10/ora-00904-wm_concat-invalid-identifier/
+
+
+
+https://blog.csdn.net/qq116165600/article/details/82979004
+
+
+
+https://www.zhangxinxu.com/wordpress/2018/08/for-in-es6-for-of/
+
+js 中 forEach遍历数组的时候是无法`break`或者`return false`中断的。
+
+
+
+https://zhoon.github.io/css3/2014/08/23/flex.html
+
+
+
+https://www.w3.org/Style/Examples/007/center.zh_CN.html
+
+
+
+https://docs.oracle.com/cd/B19306_01/server.102/b14200/conditions012.htm
+
+```sql
+SELECT
+	* 
+FROM
+	STORE_GROUP_REL rel 
+WHERE
+	rel.DEL_FLAG = 0 
+	AND EXISTS (
+    SELECT
+      s.id 
+    FROM
+      store s 
+    WHERE
+      s.del_flag = 0 
+      AND s.id = rel.store_id
+  )
+```
+
+
+
+[你可能不知道的JavaScript 中数字取整：向上取整，向下取整，四舍五入 ...](https://www.html.cn/archives/8488)
+
+
+
+https://www.breakyizhan.com/springboot/3028.html 文档基于Spring Boot2.0.1的英文文档翻译
+
+
+
+Serveo
+
+一个将本地计算机暴露在互联网上的服务。它的原理很简单，你在本地通过 SSH 与该网站建立远程代理，该网站会生成一个 URL，通过这个 URL 其他人就能访问你的本地计算机。
+
+
+
+mkdir -p /media/userfiles/cd/temp
+
+```bash
+-p, --parents
+no error if existing, make parent directories as needed
+```
+
+
+
+http://yifeng.studio/2017/10/18/mac-terminals-chmod-command/
+
+
+
+https://bossanova.uk/jexcel/v2/examples
+
+
+
+https://www.breakyizhan.com/springboot/3028.html
+
+
+
+https://juejin.im/post/5b0c0adb6fb9a009ec7e9734
+
+注意：如果不需要横向滚动条，将wrap层的样式改为
+
+```css
+>>> .el-scrollbar__wrap {
+  overflow-x: hidden;
+  margin-bottom: 0 !important;
+}
+```

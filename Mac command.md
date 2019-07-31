@@ -151,3 +151,19 @@ libodeMacBook-Pro:~ gzhennaxia$ echo $PATH
 /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ```
 
+### pbcopy
+
+#### 作用
+
+- 复制到剪切板
+
+#### 实例
+
+##### 将 SSH 中的公钥复制到剪切板
+
+```shell
+$ pbcopy < ~/.ssh/id_rsa.pub
+# or
+$ cat ~/.ssh/id_rsa.pub | pbcopy
+```
+

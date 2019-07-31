@@ -54,3 +54,16 @@ select * from deal where del_flag = 0 and deal_content like '%' || 'a' || '%'
 ALTER TABLE STORE_GROUP ADD CONSTRAINT STORE_FILTERS_JSON_CHECK CHECK ( STORE_FILTERS IS json );
 ```
 
+### 查询最新的一条记录
+
+```sql
+SELECT * FROM
+	( SELECT * FROM tableName ORDER BY CREATED_DATE DESC ) 
+WHERE
+	ROWNUM = 1
+```
+
+### 获取当前日期
+
+  [SYSDATE](http://psoug.org/definition/SYSDATE.htm)
+
