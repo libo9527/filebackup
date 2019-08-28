@@ -1,4 +1,24 @@
-<https://segmentfault.com/a/1190000012015667>
+[Oracle中TO_DATE格式- D董一点- 博客园](https://www.cnblogs.com/ajian/archive/2009/03/25/1421063.html)
+
+
+
+[中华人民共和国行政区划（五级）：省级、地级、县级、乡级和村级。](https://www.npmjs.com/package/china-division)
+
+
+
+ElementUI, IView... 的级联选择器都不支持远程搜索
+
+
+
+[Vue组件的三种调用方式](https://molunerfinn.com/vue-components/#Dialog)
+
+
+
+[利用JavaScript在canvas中画一棵树| 吴锴的博客](http://www.wukai.me/2015/10/04/canvas-trees/)
+
+
+
+https://segmentfault.com/a/1190000012015667
 
 
 
@@ -1671,155 +1691,3 @@ VMware Fusion 11序列号
 - `<script src=XXX>`
 
 
-
-H5 网页布局：
-
-vh 是一个新的单位，表示的是屏幕的高度，还有一个对应的宽度属性 vw
-
-**让容器高度充满这个屏幕**
-
-在容器内容很少的情况下，要想让这个容器充满整个屏幕可以这样：
-
-```css
-.container{
-  min-height: 100vh
-}
-```
-
-
-
-[Chrome插件“别颓啦” – 会背单词才能打开喜欢的网站](https://www.3haow.com/www-bietui-la/)
-
-
-
-[关闭Vue计算属性自带的缓存功能](https://blog.csdn.net/qq_24147051/article/details/77645970)
-
-
-
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
-
-
-
-https://blog.csdn.net/liyuming0000/article/details/49531919
-
-
-
-[Oracle中TO_DATE格式- D董一点- 博客园](https://www.cnblogs.com/ajian/archive/2009/03/25/1421063.html)
-
-
-
-[Oracle trunc()函数的用法](https://www.cnblogs.com/xiaoyudz/archive/2011/03/18/1988467.html)
-
-[oracle查询一年之内的记录，一个月之内的记录。](https://zx-code.iteye.com/blog/1895756)
-
-https://blog.csdn.net/wanghai__/article/details/4813404
-
-
-
-http://www.voidcn.com/article/p-rtatszoj-zz.html
-
-https://blog.csdn.net/wqh8522/article/details/79646934
-
-
-
-https://stackoverflow.com/questions/8892360/convert-set-to-list-without-creating-new-list
-
-
-
-[oracle查询叶子节点](https://sujunfei.iteye.com/blog/664003)
-
-
-
-https://blog.csdn.net/huoyin/article/details/1921148
-
-
-
-https://osric.com/chris/accidental-developer/2015/10/ora-00904-wm_concat-invalid-identifier/
-
-
-
-https://blog.csdn.net/qq116165600/article/details/82979004
-
-
-
-https://www.zhangxinxu.com/wordpress/2018/08/for-in-es6-for-of/
-
-js 中 forEach遍历数组的时候是无法`break`或者`return false`中断的。
-
-
-
-https://zhoon.github.io/css3/2014/08/23/flex.html
-
-
-
-https://www.w3.org/Style/Examples/007/center.zh_CN.html
-
-
-
-https://docs.oracle.com/cd/B19306_01/server.102/b14200/conditions012.htm
-
-```sql
-SELECT
-	* 
-FROM
-	STORE_GROUP_REL rel 
-WHERE
-	rel.DEL_FLAG = 0 
-	AND EXISTS (
-    SELECT
-      s.id 
-    FROM
-      store s 
-    WHERE
-      s.del_flag = 0 
-      AND s.id = rel.store_id
-  )
-```
-
-
-
-[你可能不知道的JavaScript 中数字取整：向上取整，向下取整，四舍五入 ...](https://www.html.cn/archives/8488)
-
-
-
-https://www.breakyizhan.com/springboot/3028.html 文档基于Spring Boot2.0.1的英文文档翻译
-
-
-
-Serveo
-
-一个将本地计算机暴露在互联网上的服务。它的原理很简单，你在本地通过 SSH 与该网站建立远程代理，该网站会生成一个 URL，通过这个 URL 其他人就能访问你的本地计算机。
-
-
-
-mkdir -p /media/userfiles/cd/temp
-
-```bash
--p, --parents
-no error if existing, make parent directories as needed
-```
-
-
-
-http://yifeng.studio/2017/10/18/mac-terminals-chmod-command/
-
-
-
-https://bossanova.uk/jexcel/v2/examples
-
-
-
-https://www.breakyizhan.com/springboot/3028.html
-
-
-
-https://juejin.im/post/5b0c0adb6fb9a009ec7e9734
-
-注意：如果不需要横向滚动条，将wrap层的样式改为
-
-```css
->>> .el-scrollbar__wrap {
-  overflow-x: hidden;
-  margin-bottom: 0 !important;
-}
-```
