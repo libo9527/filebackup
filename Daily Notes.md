@@ -2,6 +2,11 @@
 
 
 
+VMware Fusion 11序列号
+7HYY8-Z8WWY-F1MAN-ECKNY-LUXYX
+
+
+
 [中华人民共和国行政区划（五级）：省级、地级、县级、乡级和村级。](https://www.npmjs.com/package/china-division)
 
 
@@ -1576,121 +1581,175 @@ git push origin master 将代码提交到不同仓库中，可以指定分支
 
 
 
-[关于局部安装npm模块找不到命令的问题分析及解决方案](https://blog.csdn.net/qq_21998595/article/details/80460673)
-
-命令行运行 npm 局部安装的包：
-
-1. 在相应命令前加上路径 `node_modules/.bin/`
-
-   例如：`node_modules/.bin/lessc 1-nest.less test.css`
-
-2. package.json 中配置 scripts
+[解决 vue中props值无法赋值给data域的问题](https://blog.csdn.net/baidu_31333625/article/details/84789416)
 
 
 
-快速生成`package.json`文件
+[Mybatis对Oracle的批量操作 增加，更新，删除](https://www.iteye.com/blog/crukor-2215573)
 
-```shell
-# --yes 参数能够帮助我们快速生成默认的package.json
-npm init --yes
+https://blog.csdn.net/lwpczy1/article/details/79158535
+
+
+
+[SpringBoot构造器注入循环依赖及解决](https://blog.csdn.net/Revivedsun/article/details/84642316)
+
+
+
+https://docs.oracle.com/en/database/oracle/oracle-database/12.2/adjsn/overview-of-inserting-updating-loading-JSON-data.html#GUID-94E37619-C242-44F0-B1C3-9A63859AD0C5
+
+Update operations on a document in a JSON column require the replacement of the entire document. You can make fine-grained modifications to a JSON document, but when you need to save the changes to disk the entire updated document is written.
+
+
+
+[JSONObject和JSONArray遍历数组与对象](https://blog.csdn.net/shanliangliuxing/article/details/25163005)
+
+
+
+[fastjson对JSONObject中的指定字段重新赋值](https://blog.csdn.net/matrix_google/article/details/80855471)
+
+
+
+[Java Set集合的详解](https://blog.csdn.net/qq_33642117/article/details/52040345)
+
+
+
+mybatis `<association/>` 必须在 `<collection/>` 前
+
+
+
+线程池的使用
+
+```java
+private final ThreadFactory namedFactory = new ThreadFactoryBuilder().setNameFormat("GlobalLocationService-ThreadPool-%d").build();
+private final ExecutorService executorService = new ThreadPoolExecutor(1, 5, 500, TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>(), namedFactory, new ThreadPoolExecutor.DiscardOldestPolicy());
 ```
 
 
 
-webstorm 多行输入
-
-- 连续多行输入
-
-  option + shift + 鼠标下拉选中连续行
-
-- 隔行多行输入
-
-  option + 鼠标点击多行选中
+[How to add an array of values to a Set](https://stackoverflow.com/questions/50881453/how-to-add-an-array-of-values-to-a-set)
 
 
 
-各种在线课程平台
-
-[Udemy](http://www.udemy.com/) 
-
-[Codecademy](https://www.codecademy.com/)
+[不花钱就能用到的 Mac 截图工具里，这款软件应该是最好用的](https://sspai.com/post/41776)
 
 
 
-WebStorm Mac 下 keymap 一览表
+Oracle 触发器！（解决location统计的那个问题）
 
-**[PDF]**[DEFAULT OS X KEYMAP - JetBrains](https://resources.jetbrains.com/storage/products/webstorm/docs/WebStorm_ReferenceCard.pdf)
-
-
-
-[StringEscapeUtils的使用](https://www.cnblogs.com/mouseIT/p/4929725.html)
+Java 中的触发器
 
 
 
-[RequestMapping注解中consumes与produces的区别](https://yxjajl.iteye.com/blog/2410047)
+[How to convert Set to Array? - Stack Overflow](https://stackoverflow.com/questions/20069828/how-to-convert-set-to-array)
 
 
 
-@RequestPart 注解
-
-https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestPart.html
-
-https://blog.csdn.net/wd2014610/article/details/79727061
+element ui 的 tree 组件，当使用 append() 给跟结点插入新的子节点时会报错！
 
 
 
-CSV是最通用的一种文件格式，它可以非常容易地被导入各种PC表格及数据库中。 此文件，一行即为数据表的一行。生成数据表字段用半角逗号隔开。 
-
-CSV是文本文件,用记事本就能打开,XLS是二进制的文件只有用EXCEL才能打 
+如果你需要找到一个元素的位置或者一个元素是否存在于数组中，使用[`Array.prototype.indexOf()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) 或 [`Array.prototype.includes()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)。
 
 
 
-[常见 content-type对应表](https://blog.csdn.net/xiaoyu19910321/article/details/79279364)
-
-| 文件扩展名 | Content-Type(Mime-Type)                                      |
-| ---------- | ------------------------------------------------------------ |
-| .xlsx      | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+[How TO - Remove a Class](https://www.w3schools.com/howto/howto_js_remove_class.asp)
 
 
 
-W3c shool 并不是 W3C
+[JavaScript 获取数组的最后一个元素方法（多种）](https://www.jianshu.com/p/a8d6a1fe4b60)
+
+```javascript
+var args = [1, 2, 3];
+var lastElement = args.slice(-1);//3
+```
 
 
 
-[POI快速入门教程 | HSSF，XSSF，SXSSF的区别](https://blog.csdn.net/SudaDays/article/details/90669237)
-
-> https://poi.apache.org/components/spreadsheet/
->
-> https://poi.apache.org/apidocs/4.1/
-
-简单的说，HSSF对应旧的xls格式，XSSF对应新的xlsx格式，SXSSF是在XSSF的基础上，支持导出大批量的excel数据。
+如何从项目源码中查看数据库链接的那个 scheme
 
 
 
-VMware Fusion 11序列号
-7HYY8-Z8WWY-F1MAN-ECKNY-LUXYX
+[console.log](https://developer.mozilla.org/zh-CN/docs/Web/API/Console/log)
+
+```js
+console.log(obj1 [, obj2, ..., objN);
+console.log(msg [, subst1, ..., substN);
+console.log('String: %s, Int: %d,Float: %f, Object: %o', str, ints, floats, obj)
+console.log(`temp的值为: ${temp}`)
+```
 
 
 
-国外知名ae教程作者 AK(Andrew Kramer)
+[String.prototype.localeCompare()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
+
+```js
+root.childNodes.sort((a, b) => {
+  if (sortDirection === 'asc') {
+    return a.data.englishName.localeCompare(b.data.englishName)
+  } else if (sortDirection === 'desc') {
+    return b.data.englishName.localeCompare(a.data.englishName)
+  }
+})
+```
 
 
 
-[pr入门基础教程第20节：电视剧，电影，片尾字幕制作](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__biz%3DMzU3MDI4NTM5Mg%3D%3D%26mid%3D2247483769%26idx%3D4%26sn%3Dc76d4afd6d7d95eb9bab0e054672b431%26chksm%3Dfcf08d46cb870450bf9e7f505e00af46bb739426a9b998c55f118d7f48f022785ec7f0b923f8%26scene%3D21%23wechat_redirect)
-
-[oeasy是啥？oeasy是给想学没钱学的老百姓做的教程。本人很爱玩，也很爱学习，希望把玩中学的经验分享给大家。](http://oeasy.org/)
+具有层级关系的结点数组，如何在遍历中删除子节点。
 
 
 
+[Check if array is empty or does not exist. JS](https://stackoverflow.com/questions/24403732/check-if-array-is-empty-or-does-not-exist-js)
+
+Js Array 没有 isEmpty() 方法，判空需要使用
+
+```javascript
+if (!array || array.length === 0) {
+    // array empty or does not exist
+}
+```
 
 
-有三个标签是允许跨域加载资源：
 
-- `<img src=XXX>`
-- `<link href=XXX>`
-- `<script src=XXX>`
+[Oracle错误——ORA-03113:通信通道的文件结尾 解决办法](https://blog.csdn.net/zwk626542417/article/details/39667999)
+
+oracle 中使用 `COUNT(DISTINCT xxx)` 时出现：
+
+``` sql
+ORA-03113：end-of-file on communication  channel
+```
+
+而且只有在原始表中执行会报这个错，将原始表复制后再执行又可以，或者把 `DISTINCT` 去掉再执行也不报错。
+
+```sql
+SELECT
+    t.address_cityTown AS ID,
+    gl.PATH,
+    COUNT( DISTINCT t.id ) AS collectedQTY
+FROM
+    (
+SELECT
+    cr.id,
+    jt.*
+FROM
+    ( SELECT * FROM CUSTOMER_RAW WHERE DEL_FLAG = 0 ) cr,
+    JSON_TABLE (
+    DATA,
+    '$.generalInfo.address[*]' COLUMNS ( row_number FOR ORDINALITY, address_cityTown NUMBER ( 20 ) PATH '$.cityTown' )) AS jt
+    ) t
+    LEFT JOIN GLOBAL_LOCATION gl ON t.address_cityTown = gl.ID
+GROUP BY
+    t.address_cityTown,
+    gl.PATH
+```
 
 
 
-[Android应用 坐标系详细介绍](https://www.jb51.net/article/96226.htm)
+[Map.prototype.delete()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/delete)
 
+`**delete()**` 方法用于移除 `Map` 对象中指定 key 的键值对。
+
+
+
+[Array.prototype.map()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+`**map()**` 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。
