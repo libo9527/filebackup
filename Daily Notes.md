@@ -1,3 +1,7 @@
+如何从项目源码中查看数据库链接的那个 scheme
+
+
+
 [Oracle中TO_DATE格式- D董一点- 博客园](https://www.cnblogs.com/ajian/archive/2009/03/25/1421063.html)
 
 
@@ -1640,116 +1644,28 @@ Java 中的触发器
 
 
 
-[How to convert Set to Array? - Stack Overflow](https://stackoverflow.com/questions/20069828/how-to-convert-set-to-array)
+线上数据库连接信息中的用户名和密码加密了，不知道密钥（盐）
 
+将数据库的用户名和密码进行加密
 
-
-element ui 的 tree 组件，当使用 append() 给跟结点插入新的子节点时会报错！
-
-
-
-如果你需要找到一个元素的位置或者一个元素是否存在于数组中，使用[`Array.prototype.indexOf()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) 或 [`Array.prototype.includes()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)。
-
-
-
-[How TO - Remove a Class](https://www.w3schools.com/howto/howto_js_remove_class.asp)
-
-
-
-[JavaScript 获取数组的最后一个元素方法（多种）](https://www.jianshu.com/p/a8d6a1fe4b60)
-
-```javascript
-var args = [1, 2, 3];
-var lastElement = args.slice(-1);//3
-```
-
-
-
-如何从项目源码中查看数据库链接的那个 scheme
-
-
-
-[console.log](https://developer.mozilla.org/zh-CN/docs/Web/API/Console/log)
-
-```js
-console.log(obj1 [, obj2, ..., objN);
-console.log(msg [, subst1, ..., substN);
-console.log('String: %s, Int: %d,Float: %f, Object: %o', str, ints, floats, obj)
-console.log(`temp的值为: ${temp}`)
-```
-
-
-
-[String.prototype.localeCompare()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
-
-```js
-root.childNodes.sort((a, b) => {
-  if (sortDirection === 'asc') {
-    return a.data.englishName.localeCompare(b.data.englishName)
-  } else if (sortDirection === 'desc') {
-    return b.data.englishName.localeCompare(a.data.englishName)
-  }
-})
-```
-
-
-
-具有层级关系的结点数组，如何在遍历中删除子节点。
-
-
-
-[Check if array is empty or does not exist. JS](https://stackoverflow.com/questions/24403732/check-if-array-is-empty-or-does-not-exist-js)
-
-Js Array 没有 isEmpty() 方法，判空需要使用
-
-```javascript
-if (!array || array.length === 0) {
-    // array empty or does not exist
+```java
+public static void main(String[] args) {
+    BasicTextEncryptor textEncryptor = new BasicTextEncryptor();
+    //加密所需的salt(盐)
+    textEncryptor.setPassword("G0CvDz7oJn6");
+    //要加密的数据（数据库的用户名或密码）
+    String username = textEncryptor.encrypt("root");
+    String password = textEncryptor.encrypt("root123");
+    System.out.println("username:"+username);
+    System.out.println("password:"+password);
 }
 ```
+输出信息为:
 
-
-
-[Oracle错误——ORA-03113:通信通道的文件结尾 解决办法](https://blog.csdn.net/zwk626542417/article/details/39667999)
-
-oracle 中使用 `COUNT(DISTINCT xxx)` 时出现：
-
-``` sql
-ORA-03113：end-of-file on communication  channel
 ```
-
-而且只有在原始表中执行会报这个错，将原始表复制后再执行又可以，或者把 `DISTINCT` 去掉再执行也不报错。
-
-```sql
-SELECT
-    t.address_cityTown AS ID,
-    gl.PATH,
-    COUNT( DISTINCT t.id ) AS collectedQTY
-FROM
-    (
-SELECT
-    cr.id,
-    jt.*
-FROM
-    ( SELECT * FROM CUSTOMER_RAW WHERE DEL_FLAG = 0 ) cr,
-    JSON_TABLE (
-    DATA,
-    '$.generalInfo.address[*]' COLUMNS ( row_number FOR ORDINALITY, address_cityTown NUMBER ( 20 ) PATH '$.cityTown' )) AS jt
-    ) t
-    LEFT JOIN GLOBAL_LOCATION gl ON t.address_cityTown = gl.ID
-GROUP BY
-    t.address_cityTown,
-    gl.PATH
+username:i8QgEN4uOy2E1rHzrpSTYA==
+password:6eaMh/RX5oXUVca9ignvtg==
 ```
 
 
 
-[Map.prototype.delete()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map/delete)
-
-`**delete()**` 方法用于移除 `Map` 对象中指定 key 的键值对。
-
-
-
-[Array.prototype.map()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-
-`**map()**` 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。
