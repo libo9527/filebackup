@@ -1,3 +1,29 @@
+线上数据库连接信息中的用户名和密码加密了，不知道密钥（盐）
+
+将数据库的用户名和密码进行加密
+
+```java
+public static void main(String[] args) {
+    BasicTextEncryptor textEncryptor = new BasicTextEncryptor();
+    //加密所需的salt(盐)
+    textEncryptor.setPassword("G0CvDz7oJn6");
+    //要加密的数据（数据库的用户名或密码）
+    String username = textEncryptor.encrypt("root");
+    String password = textEncryptor.encrypt("root123");
+    System.out.println("username:"+username);
+    System.out.println("password:"+password);
+}
+```
+
+输出信息为:
+
+```
+username:i8QgEN4uOy2E1rHzrpSTYA==
+password:6eaMh/RX5oXUVca9ignvtg==
+```
+
+
+
 如何从项目源码中查看数据库链接的那个 scheme
 
 
@@ -1630,42 +1656,28 @@ private final ExecutorService executorService = new ThreadPoolExecutor(1, 5, 500
 
 
 
-[How to add an array of values to a Set](https://stackoverflow.com/questions/50881453/how-to-add-an-array-of-values-to-a-set)
+[中英文自动添加空格](http://wingjay.com/2017/06/08/rebuild-personal-blog/)
 
 
 
-[不花钱就能用到的 Mac 截图工具里，这款软件应该是最好用的](https://sspai.com/post/41776)
+[Hexo博客跳过渲染，创建自定义网页](http://blog.fcj.one/hexo-custom-page.html)
+
+[关于如何在Hexo上添加原生HTML页面](https://tailsxky.github.io/2018/03/22/add-html-page/)
 
 
 
-Oracle 触发器！（解决location统计的那个问题）
-
-Java 中的触发器
+[使用 github pages, 快速部署你的静态网页](https://zhuanlan.zhihu.com/p/38480155)
 
 
 
-线上数据库连接信息中的用户名和密码加密了，不知道密钥（盐）
-
-将数据库的用户名和密码进行加密
-
-```java
-public static void main(String[] args) {
-    BasicTextEncryptor textEncryptor = new BasicTextEncryptor();
-    //加密所需的salt(盐)
-    textEncryptor.setPassword("G0CvDz7oJn6");
-    //要加密的数据（数据库的用户名或密码）
-    String username = textEncryptor.encrypt("root");
-    String password = textEncryptor.encrypt("root123");
-    System.out.println("username:"+username);
-    System.out.println("password:"+password);
-}
-```
-输出信息为:
-
-```
-username:i8QgEN4uOy2E1rHzrpSTYA==
-password:6eaMh/RX5oXUVca9ignvtg==
-```
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit
 
 
 
+https://stackoverflow.com/questions/10123953/how-to-sort-an-array-by-a-date-property
+
+
+
+https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1-QO003JbLVaUcqt2G_BfMgo-e-rpsbS3XxuoYaEDEc4&font=Default&lang=zh-cn&initial_zoom=2&height=650
+
+https://docs.google.com/spreadsheets/d/1-QO003JbLVaUcqt2G_BfMgo-e-rpsbS3XxuoYaEDEc4/edit#gid=0
