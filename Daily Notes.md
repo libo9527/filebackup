@@ -1714,3 +1714,163 @@ https://cn.engadget.com/2016/05/04/sony-a6300-review/
 
 
 
+[聊聊Tomcat的架构设计](http://objcoding.com/2019/05/30/tomcat-architecture/)
+
+
+
+
+
+[解决git pull/push每次都需要输入密码问题- 生如夏花炫至茶靡 ...](https://blog.csdn.net/nongweiyilady/article/details/77772602)
+
+
+
+[IDEA 整合jira - jacker - CSDN博客](https://blog.csdn.net/wangmeng951011/article/details/72613719)
+
+需要把插件也装上
+
+
+
+[idea生成类注释和方法注释的正确方法](https://blog.csdn.net/qq_34581118/article/details/78409782)
+
+
+
+[SpringMVC 中 request.getInputStream() 为空解惑](https://emacsist.github.io/2017/12/04/springmvc-中-request.getinputstream-为空解惑/)
+
+
+
+[【Java基础】InputStream 、 InputStreamReader和BufferedReader](https://blog.csdn.net/zgljl2012/article/details/47267609)
+
+
+
+[为什么使用TypeReference](https://yq.aliyun.com/articles/609441)
+
+
+
+[产品之术：一目了然的状态机图](http://www.woshipm.com/pmd/828671.html)
+
+[如何绘画状态机来描述业务的变化](http://www.woshipm.com/pd/594751.html)
+
+
+
+[使用Git Stash Save 将暂存区命名| Shawn's Blog](https://blog.just666.com/2018/03/05/git-stash/)
+
+
+
+[Convert String to JsonObject with Gson | Baeldung](https://www.baeldung.com/gson-string-to-jsonobject)
+
+
+
+[移动端真机调试指南| Aotu.io「凹凸实验室」](https://aotu.io/notes/2017/02/24/Mobile-debug/index.html)
+
+
+
+Charles 注册码
+
+```bash
+Registered Name:https://zhile.io
+License Key: 48891cf209c6d32bf4
+```
+
+
+
+[charles连接手机抓包](https://www.cnblogs.com/xiaoshidi/p/6878557.html)
+
+将手机wifi位置的ip地址设置成静态ip
+
+
+
+[如何通过蓝牙和Mac OS X转移的Android智能手机之间的文件（照片，视频，文档）](https://zh-cn.amtelefon.com/cum-facem-transfer-de-fisiere-poze-clipuri-documente-prin-bluetooth-intre-un-smartphone-si-mac-os-x/samsung/)
+
+到 **系统偏好设定** la **共享** 然后点击图标打开 **共享设置**.
+
+在共享菜单选项，去酒吧在左， **激活文件共享服务** 为 **蓝牙**。 蓝牙共享。
+
+
+
+```java
+Gson gson = new Gson();  
+String json = gson.toJson(obj);  
+```
+
+
+
+[docker中宿主机与容器（container）互相拷贝传递文件的方法](https://blog.csdn.net/dongdong9223/article/details/71425077)
+
+```dockerfile
+docker cp ID全称:容器文件路径 本地路径
+```
+
+
+
+**docker exec ：**在运行的容器中执行命令
+
+OPTIONS说明：
+
+- **-d :**分离模式: 在后台运行
+- **-i :**即使没有附加也保持STDIN 打开
+- **-t :**分配一个伪终端
+
+在容器 mynginx 中开启一个交互模式的终端:
+
+```shell
+runoob@runoob:~$ docker exec -i -t  mynginx /bin/bash
+```
+
+
+
+[idea跳转到某行的快捷键(mac os) - www_minna_com的博客 ...](https://blog.csdn.net/www_minna_com/article/details/88576638)
+
+
+
+[java数组的三种初始化方式- Blog 微笑的草莓丶- CSDN博客](https://blog.csdn.net/Elias94/article/details/79808581)
+
+
+
+String.lastIndexOf()
+
+
+
+[Docker实践(二)：容器的管理(创建、查看、启动 ... - CSDN博客](https://blog.csdn.net/u010246789/article/details/53958662)
+
+- `docker ps`: 查看当前运行的容器
+
+
+
+Excel: [在单元格中插入当前日期和时间]([https://support.office.com/zh-cn/article/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E4%B8%AD%E6%8F%92%E5%85%A5%E5%BD%93%E5%89%8D%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4-b5663451-10b0-40ab-9e71-6b0ce5768138](https://support.office.com/zh-cn/article/在单元格中插入当前日期和时间-b5663451-10b0-40ab-9e71-6b0ce5768138))
+
+注意是在英文输入格式下。
+
+
+
+[查看提交历史 - Git SCM](https://git-scm.com/book/zh/v1/Git-基础-查看提交历史)
+
+
+
+Idea: fn + alt + f12 打开/关闭 Terminal
+
+
+
+[Null safe equals method | Examples Java Code Geeks - 2019](https://examples.javacodegeeks.com/core-java/class/null-safe-equals-method/)
+
+[Compare two objects in Java with possible null values - Stack ...](https://stackoverflow.com/questions/11271554/compare-two-objects-in-java-with-possible-null-values/11271611)
+
+```
+Objects.equals()
+```
+
+
+
+```java
+Gson gson = new Gson();
+String json = gson.toJson(user);
+```
+
+
+
+[对区域或表中的数据进行排序- Excel - Office Support - Office 365](https://support.office.com/zh-cn/article/对区域或表中的数据进行排序-62d0b95d-2a90-4610-a6ae-2e545c4a4654)
+
+
+
+[创建下拉列表- Office 支持 - Office Support - Office 365](https://support.office.com/zh-cn/article/创建下拉列表-7693307a-59ef-400a-b769-c5402dce407b)
+
+第四点中的“列表”在2019版中叫“序列”
