@@ -1874,3 +1874,22 @@ String json = gson.toJson(user);
 [创建下拉列表- Office 支持 - Office Support - Office 365](https://support.office.com/zh-cn/article/创建下拉列表-7693307a-59ef-400a-b769-c5402dce407b)
 
 第四点中的“列表”在2019版中叫“序列”
+
+
+
+[版本回退- 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192)
+
+
+
+[Git远程操作详解- 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2014/06/git_remote.html)
+
+如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做`git pull`合并差异，然后再推送到远程主机。这时，如果你一定要推送，可以使用`--force`选项。
+
+> ```git
+> $ git push --force origin
+> ```
+
+
+
+https://www.jianshu.com/p/4d135cafe245
+
