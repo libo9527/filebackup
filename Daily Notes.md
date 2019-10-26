@@ -1893,3 +1893,11 @@ String json = gson.toJson(user);
 
 https://www.jianshu.com/p/4d135cafe245
 
+
+
+https://devqa.io/convert-list-to-array-in-java/
+
+
+
+[Handling null values in Freemarker - Stack Overflow](https://stackoverflow.com/questions/13950289/handling-null-values-in-freemarker/27614219)
+
