@@ -1901,3 +1901,16 @@ https://devqa.io/convert-list-to-array-in-java/
 
 [Handling null values in Freemarker - Stack Overflow](https://stackoverflow.com/questions/13950289/handling-null-values-in-freemarker/27614219)
 
+
+
+[在Premiere Pro 中创建和更改序列 - Adobe](https://helpx.adobe.com/cn/premiere-pro/using/creating-changing-sequences.html)
+
+
+
+pr 调整照片大小
+https://www.youtube.com/watch?v=PcMarwNxv8U
+
+
+
+[播放时没有声音 - Adobe](https://helpx.adobe.com/cn/premiere-pro/kb/no-sound-playback-premiere-pro.html)
+
