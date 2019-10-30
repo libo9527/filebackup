@@ -1914,3 +1914,81 @@ https://www.youtube.com/watch?v=PcMarwNxv8U
 
 [播放时没有声音 - Adobe](https://helpx.adobe.com/cn/premiere-pro/kb/no-sound-playback-premiere-pro.html)
 
+
+
+[Mac查看端口占用情况- 破男孩- 博客园](https://www.cnblogs.com/ayseeing/p/4097686.html)
+
+
+
+[Tomcat 8以上版本文件上传后无权限访问的问题- 简书](https://www.jianshu.com/p/c6de9b93dbd2)
+
+
+
+[配置别名- 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/896043488029600/898732837407424)
+
+
+
+[Git远程操作详解- 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2014/06/git_remote.html)
+
+取回特定分支的更新
+
+取回`origin`主机的`master`分支。
+
+```javascript
+$ git fetch origin master
+```
+
+
+
+[使用java 8 提取出list中bean的某一属性- Nightliar的博客 ...](https://blog.csdn.net/Nightliar/article/details/78657949)
+
+
+
+查看linux文件的权限：ls -l 文件名称
+
+查看linux文件夹的权限：ls -ld 文件夹名称
+
+
+
+任何maven仓库都下载不到oracle的jar包
+
+因为oracle的jar包要去官网登陆才能拿到
+
+除非你下载好之后自己上传的私服
+
+
+
+https://blog.csdn.net/qq_39940866/article/details/80320328
+
+设置远程跟踪
+
+git branch --set-upstream-to=origin/branchName
+
+
+
+[Git远程操作详解- 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2014/06/git_remote.html)
+
+拉取远程分支到本地，并切换到该分支下
+
+```javascript
+$ git checkout -b branchName origin/branchName
+```
+
+
+
+Mac 
+
+Command+Shift+. 可以**显示隐藏文件**、**文件**夹，再按一次，恢复**隐藏**；
+
+[10 个实用技巧，让Finder 带你飞- 少数派](https://sspai.com/post/27403)
+
+
+
+https://stackoverflow.com/questions/20171768/using-sql-query-with-group-by-date
+
+```sql
+select trunc(system_date), count(is_paid)`
+  from TPWEB.TP_CLIENT_TENDER_TRANS
+ where system_date between date '2012-12-01' and date '2012-12-31'
+ group by trunc(system_date)
+```
