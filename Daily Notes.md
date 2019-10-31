@@ -1992,3 +1992,26 @@ select trunc(system_date), count(is_paid)`
  where system_date between date '2012-12-01' and date '2012-12-31'
  group by trunc(system_date)
 ```
+
+
+
+```xml
+<if test="importedDateStart != null">
+    AND ih.IMPORTED_DATE >= #{importedDateStart}
+</if>
+<if test="importedDateEnd != null">
+    <![CDATA[AND ih.IMPORTED_DATE <= #{importedDateEnd} + 1]]>
+</if>
+```
+
+
+
+[https://support.office.com/zh-cn/article/sumif-%E5%87%BD%E6%95%B0-169b8c99-c05c-4483-a712-1697a653039b?ui=zh-CN&rs=zh-CN&ad=CN](https://support.office.com/zh-cn/article/sumif-函数-169b8c99-c05c-4483-a712-1697a653039b?ui=zh-CN&rs=zh-CN&ad=CN)
+
+=SUMIF(records!A2:A54, day!A2, records!E2:E54)
+
+
+
+[https://support.office.com/zh-cn/article/%E6%A0%B9%E6%8D%AE%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6%E6%B1%82%E5%92%8C-e610ae0f-4d27-480c-9119-eb644f1e847e](https://support.office.com/zh-cn/article/根据多个条件求和-e610ae0f-4d27-480c-9119-eb644f1e847e)
+
+=SUMIFS(records!E2:E54,records!A2:A54,day!A2, records!B2:B54, ">=" & day!C1,records!B2:B54, "<" & day!D1)
