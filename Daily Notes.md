@@ -2015,3 +2015,47 @@ select trunc(system_date), count(is_paid)`
 [https://support.office.com/zh-cn/article/%E6%A0%B9%E6%8D%AE%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6%E6%B1%82%E5%92%8C-e610ae0f-4d27-480c-9119-eb644f1e847e](https://support.office.com/zh-cn/article/根据多个条件求和-e610ae0f-4d27-480c-9119-eb644f1e847e)
 
 =SUMIFS(records!E2:E54,records!A2:A54,day!A2, records!B2:B54, ">=" & day!C1,records!B2:B54, "<" & day!D1)
+
+
+
+将远程git仓库里的指定分支拉取到本地（本地不存在的分支）
+
+当我想从远程仓库里拉取一条本地不存在的分支时：
+
+```
+git checkout -b 本地分支名 origin/远程分支名
+```
+
+这个将会自动创建一个新的本地分支，并与指定的远程分支关联起来。
+
+例如远程仓库里有个分支dev2,我本地没有该分支，我要把dev2拉到我本地：
+
+![img](https://images2015.cnblogs.com/blog/784527/201705/784527-20170505012958914-102024709.png)
+
+若成功，将会在本地创建新分支dev2,并自动切到dev2上。
+
+如果出现提示：
+
+```
+fatal: Cannot update paths and switch to branch 'dev2' at the same time.
+Did you intend to checkout 'origin/dev2' which can not be resolved as commit?
+```
+
+表示拉取不成功。我们需要先执行
+
+```
+git fetch
+```
+
+然后再执行
+
+```
+git checkout -b 本地分支名 origin/远程分支名
+```
+
+即可。
+
+
+
+https://www.youtube.com/watch?v=jXcnLmymJWI
+
