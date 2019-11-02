@@ -710,10 +710,6 @@ array.splice(index1, 1 , array[index2])会将index1位置上的元素替换为in
 
 
 
-[git拉取远程分支并创建本地分支](<https://blog.csdn.net/tterminator/article/details/52225720>)
-
-
-
 [iView - A high quality UI Toolkit based on Vue.js](https://www.iviewui.com/)
 
 
@@ -1258,8 +1254,6 @@ open -n /Applications/WeChat.app/Contents/MacOS/WeChat
 
 
 
-[Git-解释“Swap file .MERGE_MSG.swp already exists”的问题- 段浅浅的 ...](https://blog.csdn.net/qq_32452623/article/details/78395832)
-
 
 
 [自定义组件的 `v-model`](https://cn.vuejs.org/v2/guide/components-custom-events.html)
@@ -1404,20 +1398,6 @@ Atom
 
 
 
-[git 删除stash 的内容](<https://blog.csdn.net/csdnmuyi/article/details/80237173>)
-
-查看 stash 列表
-
-git stash list
-
-清空 stash 列表
-
-git stash clear
-
-删除第一个队列
-
-git stash drop stash@{0}
-
 
 
 <https://learnku.com/>
@@ -1467,55 +1447,6 @@ axure rp pro 9.0 Team团队版：
 
 
 [Spring Boot(六)：如何优雅的使用 Mybatis](https://www.cnblogs.com/ityouknow/p/6037431.html)
-
-
-
-git config
-[GIT-查看config配置信息](https://www.cnblogs.com/merray/p/6006411.html)
-
-config 配置有system级别 global（用户级别） 和local（当前仓库）三个
-
-优先级依次递增，也就是配置冲突时优先使用 local 级别的。
-
- 底层配置会覆盖顶层配置 分别使用 `--system/global/local` 可以定位到配置文件
-
-查看系统config
-
-```
-`git config --system --list`
-```
-
-　　
-
-查看当前用户（global）配置
-
-```
-`git config --global  --list`
-```
-
- 
-
-查看当前仓库配置信息
-
-```
-`git config --``local`  `--list`
-```
-
-
-
-[git 切换远程分支- liuhaomatou的专栏- CSDN博客](https://blog.csdn.net/liuhaomatou/article/details/54412071)
-
-git clone只能clone远程库的master分支，无法clone所有分支，解决办法如下：
-1. 找一个干净目录，假设是git_work
-2. cd git_work
-3. git clone http://myrepo.xxx.com/project/.git ,这样在git_work目录下得到一个project子目录
-4. cd project
-5. git branch -a，列出所有分支名称如下：
-remotes/origin/dev
-remotes/origin/release
-6. git checkout -b dev origin/dev，作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
-7. git checkout -b release origin/release，作用参见上一步解释
-8. git checkout dev，切换回dev分支，并开始开发。
 
 
 
@@ -2006,56 +1937,12 @@ select trunc(system_date), count(is_paid)`
 
 
 
-[https://support.office.com/zh-cn/article/sumif-%E5%87%BD%E6%95%B0-169b8c99-c05c-4483-a712-1697a653039b?ui=zh-CN&rs=zh-CN&ad=CN](https://support.office.com/zh-cn/article/sumif-函数-169b8c99-c05c-4483-a712-1697a653039b?ui=zh-CN&rs=zh-CN&ad=CN)
-
-=SUMIF(records!A2:A54, day!A2, records!E2:E54)
-
-
-
-[https://support.office.com/zh-cn/article/%E6%A0%B9%E6%8D%AE%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6%E6%B1%82%E5%92%8C-e610ae0f-4d27-480c-9119-eb644f1e847e](https://support.office.com/zh-cn/article/根据多个条件求和-e610ae0f-4d27-480c-9119-eb644f1e847e)
-
-=SUMIFS(records!E2:E54,records!A2:A54,day!A2, records!B2:B54, ">=" & day!C1,records!B2:B54, "<" & day!D1)
-
-
-
-将远程git仓库里的指定分支拉取到本地（本地不存在的分支）
-
-当我想从远程仓库里拉取一条本地不存在的分支时：
-
-```
-git checkout -b 本地分支名 origin/远程分支名
-```
-
-这个将会自动创建一个新的本地分支，并与指定的远程分支关联起来。
-
-例如远程仓库里有个分支dev2,我本地没有该分支，我要把dev2拉到我本地：
-
-![img](https://images2015.cnblogs.com/blog/784527/201705/784527-20170505012958914-102024709.png)
-
-若成功，将会在本地创建新分支dev2,并自动切到dev2上。
-
-如果出现提示：
-
-```
-fatal: Cannot update paths and switch to branch 'dev2' at the same time.
-Did you intend to checkout 'origin/dev2' which can not be resolved as commit?
-```
-
-表示拉取不成功。我们需要先执行
-
-```
-git fetch
-```
-
-然后再执行
-
-```
-git checkout -b 本地分支名 origin/远程分支名
-```
-
-即可。
-
 
 
 https://www.youtube.com/watch?v=jXcnLmymJWI
 
+
+
+http://www.vstcrack.com/guitar-pro-7-5-mac/#page-content
+
+http://crackreview.com/guitar-pro-crack/
