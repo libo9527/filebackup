@@ -1946,3 +1946,22 @@ https://www.youtube.com/watch?v=jXcnLmymJWI
 http://www.vstcrack.com/guitar-pro-7-5-mac/#page-content
 
 http://crackreview.com/guitar-pro-crack/
+
+
+
+excel 显示所有隐藏行：
+
+全选、右键、取消隐藏
+
+
+
+[Array.prototype.find() - MDN - Mozilla](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+
+
+
+oracle order by 多条件：
+
+```sql
+ORDER BY t.maxDate DESC, t.VendorName ASC, t.IncidentDate DESC
+```
+
