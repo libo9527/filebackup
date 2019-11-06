@@ -1965,3 +1965,12 @@ oracle order by 多条件：
 ORDER BY t.maxDate DESC, t.VendorName ASC, t.IncidentDate DESC
 ```
 
+
+
+git查看本地分支关联（跟踪）的远程分支之间的对应关系
+
+git branch -vv
+
+
+
+http://www.voidcn.com/article/p-edflrmln-bts.html
