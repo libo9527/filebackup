@@ -1974,3 +1974,28 @@ git branch -vv
 
 
 http://www.voidcn.com/article/p-edflrmln-bts.html
+
+
+
+
+
+[CSS 开关样式| 菜鸟工具](https://c.runoob.com/codedemo/3146)
+
+[css3实现的switch开关按钮 - CodePen](https://codepen.io/chutou/pen/qdGZQr)
+
+
+
+使用 Linux alias 配置 git 快速提交命令
+
+[git 快速提交| frostbelt's home](https://frostbelt.github.io/2018/12/19/git-快速提交/)
+
+命令改成
+
+```shell
+alias gitqkci='git add . && git commit -m ${1:-update} && git push'
+```
+
+https://man.linuxde.net/alias
+
+https://www.liaoxuefeng.com/wiki/896043488029600/898732837407424
+
