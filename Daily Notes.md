@@ -1999,3 +1999,14 @@ https://man.linuxde.net/alias
 
 https://www.liaoxuefeng.com/wiki/896043488029600/898732837407424
 
+https://unix.stackexchange.com/questions/329994/alias-and-functions
+
+https://www.zhihu.com/question/23137414
+
+
+
+
+
+Git checkout 时忘记关联远程仓库，可以利用
+
+git pull origin branchName 来将本地和远程仓库关联起来。
