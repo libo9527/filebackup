@@ -2010,3 +2010,93 @@ https://www.zhihu.com/question/23137414
 Git checkout 时忘记关联远程仓库，可以利用
 
 git pull origin branchName 来将本地和远程仓库关联起来。
+
+
+
+
+
+https://pandoc.org/getting-started.html
+
+```shell
+pandoc test.md -s -o test.docx
+```
+
+
+
+[javascript中的双波浪线~~与双感叹号!!,.NET双问号??用法](https://blog.cozof.com/pieces/pieces/13.shtml)
+
+双波浪线 `~~` 等价于Math.floor取整，`~~` 的效率较高可读性较差,"Math.floor"效率较高可读性较低。
+
+双感叹号"!!"等价于"Boolean",把值转换为bool类型；
+
+
+
+https://www.bilibili.com/read/cv1069327/
+
+百度云播放页面，控制台输入
+
+```js
+videojs.getPlayers("video-player").html5player.tech_.setPlaybackRate(2)
+```
+
+
+
+B2C：人与商品，例如京东、淘宝
+
+P2P：人与人，例如微信、QQ
+
+C2P：人与服务，例如小程序
+
+
+
+
+
+https://www.baeldung.com/gson-string-to-jsonobject
+
+
+
+https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+
+```bash
+$ git push -d <remote_name> <branch_name>
+$ git branch -d <branch_name>
+```
+
+
+
+```sql
+UPDATE (
+SELECT
+	ow.FREESHIPPINGTYPE 
+FROM
+	ORDERWAREHOUSE ow
+	LEFT JOIN ORDERS o ON ow.ORDERID = o.ORDERID 
+WHERE
+	o.ORDERSOURCE = 1 
+	AND ow.SHIPPINGPRICE = 0 
+	AND ow.FREESHIPPINGTYPE IS NULL 
+	) t 
+	SET t.FREESHIPPINGTYPE = 1
+```
+
+
+
+Oracle  between 区间是闭区间
+
+
+
+https://blog.csdn.net/w958796636/article/details/53611133
+
+不删除工作空间改动代码，撤销 `commit`，并且撤销 `git add .` 操作
+
+这个为默认参数, git reset --mixed HEAD^ 和 git reset HEAD^ 效果是一样的。
+
+
+
+http://blog.itpub.net/205377/viewspace-1278977/
+
+1) 执行:ALTER SEQUENCE SEQ_TEST INCREMENT BY 1000;
+
+2) 执行:SELECT SEQ_TEST.NEXTVAL FROM DUAL;
+
+3) 执行:ALTER SEQUENCE SEQ_TEST INCREMENT BY 1;
