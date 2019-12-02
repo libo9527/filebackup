@@ -2100,3 +2100,77 @@ http://blog.itpub.net/205377/viewspace-1278977/
 2) 执行:SELECT SEQ_TEST.NEXTVAL FROM DUAL;
 
 3) 执行:ALTER SEQUENCE SEQ_TEST INCREMENT BY 1;
+
+
+
+https://www.baeldung.com/find-list-element-java
+
+```java
+`Customer james = customers.stream()`` ``.filter(customer -> ``"James"``.equals(customer.getName()))`` ``.findAny()`` ``.orElse(``null``);`
+```
+
+
+
+删除远程分支
+
+```shell
+$ git push origin --delete branchName
+```
+
+
+
+ ES2015 的 [参数解构](https://github.com/lukehoban/es6features#destructuring)
+
+```js
+import {data} from response;
+```
+
+
+
+https://blog.csdn.net/whb3299065/article/details/79005754
+
+
+
+[GIT 转义字符](https://github.com/goreliu/zshguide/blob/master/03_Zsh-%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97%EF%BC%88%E7%AC%AC%E4%B8%89%E7%AF%87-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E4%B9%8B%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E5%92%8C%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%87%BA%EF%BC%89.md#%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6)
+
+
+
+http://www.voidcn.com/article/p-gjfbqqwc-vm.html
+
+https://sanii.cn/article/226#directory054346954978750113
+
+https://my.oschina.net/yuhangyes/blog/1924508
+
+https://www.jianshu.com/p/c8a43d26bc0f
+
+
+
+https://howtodoinjava.com/java8/java-8-join-string-array-example/
+
+```java
+String joinedString = String.join(", ", "How", "To", "Do", "In", "Java");
+System.out.println(joinedString);
+ 
+// Output:
+How, To, Do, In, Java
+```
+
+
+
+https://juejin.im/post/5c7d380e6fb9a049ec6bceed
+
+使用时一定要带上http://的一个完整url地址，例如 `target: 'localhost:3000'` 是不行的，需要改成 `target: 'http://localhost:3000'`
+
+
+
+https://juejin.im/post/58e3a5a0a0bb9f0069fc16bb
+
+
+
+https://my.oschina.net/u/3723702/blog/3089997
+
+https://mybatis.org/mybatis-3/getting-started.html
+
+
+
+https://tomoya92.github.io/2019/10/29/spring-boot-mybatis/
