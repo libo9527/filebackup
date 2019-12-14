@@ -2167,10 +2167,45 @@ https://juejin.im/post/58e3a5a0a0bb9f0069fc16bb
 
 
 
-https://my.oschina.net/u/3723702/blog/3089997
-
-https://mybatis.org/mybatis-3/getting-started.html
-
-
-
 https://tomoya92.github.io/2019/10/29/spring-boot-mybatis/
+
+
+
+https://blog.csdn.net/wangb_java/article/details/86676166
+
+
+
+要获取当前分支中进行的合并提交的历史记录,请使用以下命令：
+
+```shell
+git log --merges
+```
+
+
+
+```shell
+$ lsof -i :8080
+COMMAND   PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+idea    25265 libo  878u  IPv4 0xf29659ef92fe050d      0t0  TCP 192.168.0.177:65192->10.2.0.15:http-alt (CLOSE_WAIT)
+$ kill 25265
+```
+
+
+
+https://harttle.land/2018/03/13/remove-certain-commits-from-history.html
+
+
+
+全局异常处理器无法处理 Filter 中的异常！！！
+
+
+
+JWT 的最大缺点是，由于服务器不保存 session 状态，因此无法在使用过程中废止某个 token，或者更改 token 的权限。也就是说，一旦 JWT 签发了，在到期之前就会始终有效，除非服务器部署额外的逻辑。
+
+
+
+MAC 下 IDEA 选中当前 word：`ctrl + G`
+
+
+
+https://blog.csdn.net/qq_38023253/article/details/81784186
