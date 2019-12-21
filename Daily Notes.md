@@ -2209,3 +2209,26 @@ MAC 下 IDEA 选中当前 word：`ctrl + G`
 
 
 https://blog.csdn.net/qq_38023253/article/details/81784186
+
+
+
+[https://zjxkenshine.github.io/2018/04/01/MyBatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E9%AB%98%E7%BA%A7%E6%9F%A5%E8%AF%A2-%E6%98%A0%E5%B0%84/#collection%E9%9B%86%E5%90%88%E7%9A%84%E5%B5%8C%E5%A5%97%E6%9F%A5%E8%AF%A2](https://zjxkenshine.github.io/2018/04/01/MyBatis学习笔记（六）：高级查询-映射/#collection集合的嵌套查询)
+
+```xml
+<resultMap extends="BaseResultMap">
+```
+
+```xml
+<collection columnPrefix="role_"/>
+```
+
+
+
+https://github.com/alibaba/fastjson/issues/1389
+
+https://github.com/alibaba/fastjson/wiki/FieldBased_cn
+
+
+
+https://stackoverflow.com/questions/52828686/how-can-i-check-null-and-empty-both-in-freemarker-string
+
