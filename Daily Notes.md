@@ -2232,3 +2232,16 @@ https://github.com/alibaba/fastjson/wiki/FieldBased_cn
 
 https://stackoverflow.com/questions/52828686/how-can-i-check-null-and-empty-both-in-freemarker-string
 
+
+
+[ArrayList初始化的4种方法](https://blog.csdn.net/u011523796/article/details/79537055)
+
+```java
+ArrayList<T> obj = new ArrayList<T>() {{
+    add(Object o1);
+    add(Object o2);
+    ...
+    ...
+}};
+```
+
